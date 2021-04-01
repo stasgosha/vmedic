@@ -1,0 +1,127 @@
+.services-top-section{
+	.section-top{
+		padding: 44px 0 27px;
+		position: relative;
+		z-index: 2;
+		background: #fff;
+	}
+
+	.section-bottom{
+		padding: 13px 0;
+		border-bottom: 4px solid #eef3fc;
+		box-shadow: $shadow;
+		background: #fff;
+	}
+
+	@media screen and (max-width: 767px){
+		.section-top{
+			padding: 20px 0 7px;
+		}
+	}
+}
+
+.page-nav,
+.static-page-nav{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: -10px;
+
+	li{
+		margin-right: 20px;
+		margin-bottom: 10px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		a{
+			padding: 8px 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			min-height: 52px;
+			border-radius: 26px;
+			border: 1px solid #BFCEDF;
+			font-weight: 500;
+			color: $text-color;
+
+			&.active{
+				background: $primary;
+				color: #fff;
+				border-color: $primary;
+			}
+
+			&:hover,
+			&:focus{
+				border-color: $primary;
+				outline: none;
+			}
+		}
+
+		@media screen and (max-width: 1329px){
+			margin-right: 10px;
+		}
+
+		@media screen and (max-width: 991px){
+			a{
+				min-height: 42px;
+				font-size: 12px;
+				border-radius: 21px;
+			}
+		}
+	}
+}
+
+.page-nav-select{
+	position: relative;
+
+	&:after{
+		content: '';
+		display: block;
+		width: 12px;
+		height: 8px;
+		background: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2392ca0c' stroke-width='2'/%3E%3C/svg%3E") no-repeat center center / contain;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 25px;
+	}
+
+	select{
+		border: 1px solid #C0CEDF;
+		appearance: none;
+		background: #fff;
+		border-radius: 30px;
+		flex: auto;
+		height: 60px;
+		font-size: 16px;
+		color: #465C79;
+		font-family: inherit;
+		padding: 0 24px;
+		outline: none !important;
+		transition: all $t;
+		box-shadow: $shadow;
+		width: 100%;
+		cursor: pointer;
+		font-weight: 400;
+
+		&:focus,
+		&:hover{
+			border-color: $primary;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		&:after{
+			right: 20px;
+		}
+
+		select{
+			height: 52px;
+			border-radius: 26px;
+			padding: 0 22px;
+			font-size: 14px;
+		}
+	}
+}

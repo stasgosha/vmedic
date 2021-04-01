@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Все услуги клиник | Vmedic</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/slick.min.css">
+	<link rel="stylesheet" href="css/slick-theme.min.css">
+	<link rel="stylesheet" href="css/jcf.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="home">
+	<div class="wrapper" id="top">
+		<header class="header">
+			<div class="header-row first">
+				<div class="container">
+					<div class="header-inner">
+						<div class="header-block">
+							<a href="index.html" class="logo-block">
+								<img src="img/logo.svg" alt="VMedic">
+							</a>
+						</div>
+						<div class="header-block header-logo-descr md-hidden">
+							<div class="logo-descr"><strong>Сервис по подбору клиник и врачей</strong> в Москве и Московской области</div>
+						</div>
+						<div class="header-block md-hidden">
+							<div class="header-contacts">
+								<a href="tel:84951412281" class="phone-link">8 (495) 141-22-81</a>
+								<p class="work-time">Время работы Call-центра: <br>с 09:00 до 22:00</p>
+							</div>
+						</div>
+						<div class="header-block md-visible">
+							<button class="menu-opener" aria-label="Показать меню">
+								<span class="bar"></span>
+								<span class="bar"></span>
+								<span class="bar"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-row second md-hidden">
+				<div class="container">
+					<div class="header-inner">
+						<div class="header-block flex-auto">
+							<nav class="top-nav">
+								<ul>
+									<li class="bolder"><a href="clinics.html">Клиники</a></li>
+									<li class="bolder"><a href="doctors.html">Врачи</a></li>
+									<li class="menu-item-has-children">
+										<a href="#">Профосмотры</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Выездная медкомиссия</a></li>
+											<li><a href="#">Предрейсовый медосмотр</a></li>
+											<li><a href="#">Предварительный медицинский осмотр</a></li>
+											<li><a href="#">Предварительный медицинский осмотр</a></li>
+											<li><a href="#">Периодический медицинский осмотр работников</a></li>
+											<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children">
+										<a href="medspravka.html">Медицинские справки</a>
+										<ul class="sub-menu">
+											<li><a href="medspravka-gibdd.html">Медсправка для ГИБДД</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children">
+										<a href="#">Медкнижки</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children sub-menu-right-aligned">
+										<a href="#">Диагностика</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Выездная медкомиссия</a></li>
+											<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children highlighted sub-menu-right-aligned">
+										<a href="#">Тест на COVID-19</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Выездная медкомиссия</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header-block">
+							<div class="header-search-block">
+								<button class="block-opener" aria-label="Открыть поиск">
+									<svg class="btn-icon">
+										<use xlink:href="img/icons-sprite.svg#search"></use>
+									</svg>
+								</button>
+								<div class="block-hidden-content">
+									<form action="" class="search-form">
+										<input type="text" class="form-field">
+										<button type="submit" class="form-button">
+											<svg class="btn-icon">
+												<use xlink:href="img/icons-sprite.svg#search"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Мобильное меню -->
+			<div class="mobile-top-nav">
+				<!-- Принцип работы такой же, как и на https://goshovsky.com/projects/hlrus/ -->
+				<div class="mobile-nav">
+					<div class="nav-layer layer-1">
+						<ul>
+							<li class="bolder"><a href="clinics.html">Клиники</a></li>
+							<li class="bolder"><a href="doctors.html">Врачи</a></li>
+							<li><a href="#" data-subnav="#sub-examinations">Профосмотры</a></li>
+							<li><a href="#" data-subnav="#sub-medspravki">Медицинские справки</a></li>
+							<li><a href="#" data-subnav="#sub-medbook">Медкнижки</a></li>
+							<li><a href="#" data-subnav="#sub-diagnostic">Диагностика</a></li>
+							<li class="highlighted"><a href="#" data-subnav="#sub-covid-test">Тест на COVID-19</a></li>
+						</ul>
+
+						<div class="top-nav-footer">
+							<form action="" class="search-form">
+								<input type="text" class="form-field">
+								<button type="submit" class="form-button">
+									<svg class="btn-icon">
+										<use xlink:href="img/icons-sprite.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+
+							<div class="header-contacts">
+								<a href="tel:84951412281" class="phone-link">8 (495) 141-22-81</a>
+								<p class="work-time">Время работы Call-центра: <br>с 09:00 до 22:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="nav-layer layer-2">
+						<div class="subnav" id="sub-examinations">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Профосмотры</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+								<li><a href="#">Выездная медкомиссия</a></li>
+								<li><a href="#">Предрейсовый медосмотр</a></li>
+								<li><a href="#">Предварительный медицинский осмотр</a></li>
+								<li><a href="#">Предварительный медицинский осмотр</a></li>
+								<li><a href="#">Периодический медицинский осмотр работников</a></li>
+								<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-medspravki">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Медицинские справки</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-medbook">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Медкнижки</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-diagnostic">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Диагностика</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-sub-covid-test">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Тест на COVID-19</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- <div class="nav-layer layer-3">
+						<div class="subnav" id="sub-cat-1">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Кровельные воронки</button>
+						</div>
+						<div class="subnav" id="sub-cat-2">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Трапы</button>
+					
+							<ul class="tab-menu">
+								<li><a href="#">Пример пункта меню без подкатегорий</a></li>
+								<li class="menu-item-has-children">
+									<a href="#">Трапы для внутренних помещений</a>
+									<ul class="sub-menu">
+										<li><a href="#">Вертикальный выпуск</a></li>
+										<li><a href="#">Горизонтальный выпуск</a></li>
+										<li><a href="#">Поворотный шарнир</a></li>
+										<li><a href="#">Трапы под трубу SML</a></li>
+										<li><a href="#">Трапы с обратным клапаном</a></li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Дизайн-трапы</a>
+									<ul class="sub-menu">
+										<li><a href="#">Вертикальный выпуск</a></li>
+										<li><a href="#">Горизонтальный выпуск</a></li>
+										<li><a href="#">Люки для душевых</a></li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Трапы для подвалов и тех. помещений</a>
+									<ul class="sub-menu">
+										<li><a href="#">Вертикальный выпуск</a></li>
+										<li><a href="#">Горизонтальный выпуск</a></li>
+										<li><a href="#">Люки для душевых</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-cat-3">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Обратные клапаны</button>
+						</div>
+						<div class="subnav" id="sub-cat-4">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Сифоны</button>
+						</div>
+						<div class="subnav" id="sub-cat-5">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Воздушные клапаны</button>
+						</div>
+						<div class="subnav" id="sub-cat-6">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Арматура для подземного ввода трубопроводов</button>
+						</div>
+						<div class="subnav" id="sub-cat-7">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Комплектующие для канализации</button>
+						</div>
+						<div class="subnav" id="sub-cat-8">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Дополнительное оборудование</button>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</header>
+		<main class="page-content">
+			<section class="breadcrumbs-section">
+				<div class="container">
+					<ol class="breadcrumbs">
+						<li><a href="index.html">Vmedic</a></li>
+						<li><a href="services.html">Услуги</a></li>
+					</ol>
+				</div>
+			</section>
+
+			<section class="services-top-section">
+				<div class="section-top">
+					<div class="container">
+						<h1 class="page-caption"><strong>Все услуги клиник</strong></h1>
+					</div>
+				</div>
+				<div class="section-bottom-holder"></div>
+				<div class="section-bottom">
+					<div class="container">
+						<div class="page-nav-select xs-visible">
+							<select>
+								<option value="#section-1">Медицинские справки</option>
+								<option value="#section-2">Медицинские книжки</option>
+								<option value="#section-3">Профосмотры</option>
+								<option value="#section-4">Диагностика</option>
+								<option value="#section-5">Тест на COVID-19</option>
+							</select>
+						</div>
+						<ul class="page-nav xs-hidden">
+							<li><a href="#section-1">Медицинские справки</a></li>
+							<li><a href="#section-2">Медицинские книжки</a></li>
+							<li><a href="#section-3">Профосмотры</a></li>
+							<li><a href="#section-4">Диагностика</a></li>
+							<li><a href="#section-5">Тест на COVID-19</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="services-list-section">
+				<div class="container">
+					<div class="services-category" id="section-1">
+						<div class="category-caption">
+							<div class="block-icon">
+								<img src="img/big-icons/recipe.svg" alt="">
+							</div>
+							<h2 class="block-text">Медицинские справки</h2>
+						</div>
+						<div class="category-list">
+							<div class="item">
+								<h3 class="item-caption">Для работы</h3>
+								<ul>
+									<li><a href="#">Справка (заключение) о профпригодности по приказу 302н</a></li>
+									<li><a href="#">Медицинская справка для госслужбы 001-ГС/у</a></li>
+									<li><a href="#">Медицинская справка для работы с гостайной 989н</a></li>
+									<li><a href="#">Справка для поступления в ВУЗ / на работу 086/у</a></li>
+									<li><a href="#">Справка в ФМС для РВП / ВНЖ / разрешения на работу</a></li>
+									<li><a href="#">Справка по форме 500 для работы в следственных органах</a></li>
+									<li><a href="#">Справка по форме 405 для работы на высоте</a></li>
+									<li><a href="#">Больничный лист</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3 class="item-caption">Для учебы</h3>
+								<ul>
+									<li><a href="#">Справка для поступления в ВУЗ / на работу 086/у</a></li>
+									<li><a href="#">Справка в ФМС для РВП / ВНЖ / разрешения на работу</a></li>
+									<li><a href="#">Справка по форме 500 для работы в следственных органах</a></li>
+									<li><a href="#">Справка по форме 405 для работы на высоте</a></li>
+									<li><a href="#">Больничный лист</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3 class="item-caption">Для отдыха</h3>
+								<ul>
+									<li><a href="#">Справка (заключение) о профпригодности по приказу 302н</a></li>
+									<li><a href="#">Медицинская справка для госслужбы 001-ГС/у</a></li>
+									<li><a href="#">Медицинская справка для работы с гостайной 989н</a></li>
+									<li><a href="#">Справка по форме 500 для работы в следственных органах</a></li>
+									<li><a href="#">Справка по форме 405 для работы на высоте</a></li>
+									<li><a href="#">Больничный лист</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3 class="item-caption">Для детей</h3>
+								<ul>
+									<li><a href="#">Справка (заключение) о профпригодности по приказу 302н</a></li>
+									<li><a href="#">Справка в ФМС для РВП / ВНЖ / разрешения на работу</a></li>
+									<li><a href="#">Справка по форме 500 для работы в следственных органах</a></li>
+									<li><a href="#">Справка по форме 405 для работы на высоте</a></li>
+									<li><a href="#">Больничный лист</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3 class="item-caption">Прочие</h3>
+								<ul>
+									<li><a href="#">Медицинская справка на права в ГИБДД / ГАИ 003-В/у</a></li>
+									<li><a href="#">Медсправка для ГИБДД 003-В/у с наркологом и психиатром</a></li>
+									<li><a href="#">Медицинская справка на оружие 002-О/у</a></li>
+									<li><a href="#">Медицинская справка на маломерные суда / в ГИМС</a></li>
+									<li><a href="#">Cправка (заключение) о результатах флюорографии</a></li>
+									<li><a href="#">Медицинская справка для госпитализации 057/у</a></li>
+									<li><a href="#">Справка (выписка) из медицинской карты амбулаторного больного 027/у</a></li>
+									<li><a href="#">Медицинская справка об эпидокружении</a></li>
+									<li><a href="#">Медицинская справка (заключение) от терапевта</a></li>
+									<li><a href="#">Медицинская справка (заключение) от стоматолога</a></li>
+									<li><a href="#">Медицинская справка для спорта</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="services-category" id="section-2">
+						<div class="category-caption">
+							<div class="block-icon">
+								<img src="img/big-icons/med-book.svg" alt="">
+							</div>
+							<h2 class="block-text">Медицинские книжки</h2>
+						</div>
+						<div class="category-list">
+							<div class="item">
+								<ul>
+									<li><a href="#">Справка (заключение) о профпригодности по приказу 302н</a></li>
+									<li><a href="#">Медицинская справка для госслужбы 001-ГС/у</a></li>
+									<li><a href="#">Медицинская справка для работы с гостайной 989н</a></li>
+									<li><a href="#">Справка для поступления в ВУЗ / на работу 086/у</a></li>
+									<li><a href="#">Справка в ФМС для РВП / ВНЖ / разрешения на работу</a></li>
+									<li><a href="#">Справка по форме 500 для работы в следственных органах</a></li>
+									<li><a href="#">Справка по форме 405 для работы на высоте</a></li>
+									<li><a href="#">Больничный лист</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li><a href="#">Справка для поступления в ВУЗ / на работу 086/у</a></li>
+									<li><a href="#">Справка в ФМС для РВП / ВНЖ / разрешения на работу</a></li>
+									<li><a href="#">Справка по форме 500 для работы в следственных органах</a></li>
+									<li><a href="#">Справка по форме 405 для работы на высоте</a></li>
+									<li><a href="#">Больничный лист</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="services-category" id="section-3">
+						<div class="category-caption">
+							<div class="block-icon">
+								<img src="img/big-icons/doctor.svg" alt="">
+							</div>
+							<h2 class="block-text">Профосмотры</h2>
+						</div>
+						<div class="category-list">
+							<div class="item">
+								<ul>
+									<li><a href="#">Справка (заключение) о профпригодности по приказу 302н</a></li>
+									<li><a href="#">Медицинская справка для госслужбы 001-ГС/у</a></li>
+									<li><a href="#">Медицинская справка для работы с гостайной 989н</a></li>
+									<li><a href="#">Справка для поступления в ВУЗ / на работу 086/у</a></li>
+									<li><a href="#">Справка в ФМС для РВП / ВНЖ / разрешения на работу</a></li>
+									<li><a href="#">Справка по форме 500 для работы в следственных органах</a></li>
+									<li><a href="#">Справка по форме 405 для работы на высоте</a></li>
+									<li><a href="#">Больничный лист</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li><a href="#">Справка для поступления в ВУЗ / на работу 086/у</a></li>
+									<li><a href="#">Справка в ФМС для РВП / ВНЖ / разрешения на работу</a></li>
+									<li><a href="#">Справка по форме 500 для работы в следственных органах</a></li>
+									<li><a href="#">Справка по форме 405 для работы на высоте</a></li>
+									<li><a href="#">Больничный лист</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="services-category" id="section-4">
+						<div class="category-caption">
+							<div class="block-icon">
+								<img src="img/big-icons/stethoscope.svg" alt="">
+							</div>
+							<h2 class="block-text">Диагностика</h2>
+						</div>
+						<div class="category-list">
+							<div class="item">
+								<ul>
+									<li><a href="#">Справка (заключение) о профпригодности по приказу 302н</a></li>
+									<li><a href="#">Медицинская справка для госслужбы 001-ГС/у</a></li>
+									<li><a href="#">Медицинская справка для работы с гостайной 989н</a></li>
+									<li><a href="#">Справка для поступления в ВУЗ / на работу 086/у</a></li>
+									<li><a href="#">Справка в ФМС для РВП / ВНЖ / разрешения на работу</a></li>
+									<li><a href="#">Справка по форме 500 для работы в следственных органах</a></li>
+									<li><a href="#">Справка по форме 405 для работы на высоте</a></li>
+									<li><a href="#">Больничный лист</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li><a href="#">Справка для поступления в ВУЗ / на работу 086/у</a></li>
+									<li><a href="#">Справка в ФМС для РВП / ВНЖ / разрешения на работу</a></li>
+									<li><a href="#">Справка по форме 500 для работы в следственных органах</a></li>
+									<li><a href="#">Справка по форме 405 для работы на высоте</a></li>
+									<li><a href="#">Больничный лист</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="services-category" id="section-5">
+						<div class="category-caption">
+							<div class="block-icon">
+								<img src="img/big-icons/virus.svg" alt="">
+							</div>
+							<h2 class="block-text">Тест на COVID-19</h2>
+						</div>
+						<div class="category-list">
+							<div class="item">
+								<ul>
+									<li><a href="#">Справка (заключение) о профпригодности по приказу 302н</a></li>
+									<li><a href="#">Медицинская справка для госслужбы 001-ГС/у</a></li>
+									<li><a href="#">Медицинская справка для работы с гостайной 989н</a></li>
+									<li><a href="#">Справка для поступления в ВУЗ / на работу 086/у</a></li>
+									<li><a href="#">Справка в ФМС для РВП / ВНЖ / разрешения на работу</a></li>
+									<li><a href="#">Справка по форме 500 для работы в следственных органах</a></li>
+									<li><a href="#">Справка по форме 405 для работы на высоте</a></li>
+									<li><a href="#">Больничный лист</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li><a href="#">Справка для поступления в ВУЗ / на работу 086/у</a></li>
+									<li><a href="#">Справка в ФМС для РВП / ВНЖ / разрешения на работу</a></li>
+									<li><a href="#">Справка по форме 500 для работы в следственных органах</a></li>
+									<li><a href="#">Справка по форме 405 для работы на высоте</a></li>
+									<li><a href="#">Больничный лист</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="callback-section">
+				<div class="container">
+					<div class="section-caption">
+						<svg class="sc-icon">
+							<use xlink:href="img/icons-sprite.svg#heartbeat"></use>
+						</svg>
+						<h2 class="sc-title">Поможем выбрать клинику или найти нужного врача</h2>
+					</div>
+
+					<div class="section-text">
+						<p>Свяжитесь с нами по телефону <a href="tel:84951203386">8 (495) 120-33-86</a><br>или оставьте заявку, мы свяжемся с Вами в ближайщее время</p>
+					</div>
+
+					<div class="section-footer">
+						<button class="btn btn-bigger btn-dark" data-modal="#callback-modal">Позвоните мне</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer" role="contentinfo">
+			<div class="footer-row first">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block footer-nav-wrapper">
+							<div class="footer-nav-columns">
+								<div class="column">
+									<h3 class="footer-caption">Сервис</h3>
+									<ul class="footer-nav">
+										<li><a href="#">О проекте</a></li>
+										<li><a href="#">Правила использования сервиса</a></li>
+										<li><a href="#">Политика конфиденциальности</a></li>
+										<li><a href="#">Партнеры</a></li>
+									</ul>
+								</div>
+								<div class="column">
+									<h3 class="footer-caption">Пациентам</h3>
+									<ul class="footer-nav">
+										<li><a href="clinics.html">Клиники</a></li>
+										<li><a href="doctors.html">Врачи</a></li>
+										<li><a href="services.html">Услуги</a></li>
+										<li><a href="#">Статьи</a></li>
+									</ul>
+								</div>
+								<div class="column">
+									<h3 class="footer-caption">Клиникам</h3>
+									<ul class="footer-nav">
+										<li><a href="#">Добавить клинику</a></li>
+										<li><a href="#">Продажа медицинского оборудования и расходных материалов</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="footer-block footer-contacts-wrapper">
+							<a href="index.html" class="footer-logo">
+								<img src="img/logo.svg" alt="">
+							</a>
+
+							<div class="contacts-info-block">
+								<p>Пишите нам на <a href="mailto:info@vmedic.ru">info@vmedic.ru</a><br>Звоните на <a href="tel:84951203386">8 (495) 120-33-86</a></p>
+								<p class="work-time">Время работы Call-центра: с 09:00 до 22:00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-row second">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block">
+							<p class="copyright">© VMEDIC 2020 <small>Цены, приведённые на сайте, не окончательные, не являются публичной офертой и носят информационный характер.</small></p>
+						</div>
+						<div class="footer-block webolution-wrapper">
+							<a href="https://webolution.ru/" class="webolution" aria-label="Создано в Webolution">
+								<img src="img/webolution.png" alt="Webolution - evolution of your business">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- <div class="modal small" id="callback-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+
+				<h3 class="modal-caption">Заказать звонок</h3>
+
+				<div class="form order-form">
+					<form action="#">
+						<div class="form-inner">
+							<div class="form-fields">
+								<div class="form-field">
+									<input type="text" class="input-field" placeholder="Ваше имя">
+								</div>
+								<div class="form-field">
+									<input type="tel" class="input-field" placeholder="Ваш телефон">
+								</div>
+							</div>
+
+							<div class="form-footer">
+								<button class="btn" type="submit">Оставить заявку</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="modal video-modal" id="video-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+				<div class="modal-video">
+					<div id="modal-video-iframe"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jcf.js"></script>
+	<script src="js/jcf.select.js"></script>
+	<!-- <script src="//www.youtube.com/iframe_api"></script> -->
+	<!-- <script src="js/wow.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

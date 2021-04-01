@@ -1,0 +1,133 @@
+.populars-section{
+	padding: 68px 0 30px;
+
+	.section-inner{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 30px;
+	}
+
+	@media screen and (max-width: 767px){
+		.section-inner{
+			grid-gap: 16px;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.section-inner{
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		padding: 40px 0 25px;
+	}
+}
+
+.populars-card{
+	height: 100%;
+	background: #fff;
+	box-shadow: $shadow;
+	border-radius: $r;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+
+	.card-caption{
+		font-size: 28px;
+		line-height: 1.33;
+		margin-bottom: 20px;
+		color: #657991;
+		font-weight: 600;
+
+		.caption-icon{
+			width: 53px;
+			height: 25px;
+			display: inline-block;
+			margin-right: calc(10px - 0.3em);
+			fill: $primary;
+			transform: translateY(2px);
+		}
+
+		@media screen and (max-width: 1329px){
+			font-size: 24px;
+
+			.caption-icon{
+				width: 40px;
+			}
+		}
+
+		@media screen and (max-width: 575px){
+			font-size: 18px;
+
+			.caption-icon{
+				width: 30px;
+				height: 15px;
+				margin-right: calc(7px - 0.3em);
+			}
+		}
+	}
+
+	.card-list{
+		flex: auto;
+		columns: 2;
+		column-gap: 30px;
+		margin-bottom: calc(30px - 10px);
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 500;
+
+		li{
+			margin-bottom: 10px;
+
+			a{
+				color: $text-dark;
+
+				&:hover,
+				&:focus{
+					color: $primary;
+					border-bottom: 1px dashed #63C463;
+				}
+			}
+		}
+	}
+
+	.card-footer{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.btn{
+			width: 100%;
+			max-width: 220px;
+		}
+	}
+
+	@media screen and (max-width: 1329px){
+		padding: 25px 20px 35px;
+	}
+
+	@media screen and (max-width: 991px){
+		.card-list{
+			columns: 1;
+			max-height: calc(9 * (20px + 10px) - 10px); // 9 lines
+			overflow: hidden;
+		}
+
+		.card-footer{
+			justify-content: flex-start;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.card-footer{
+			.btn{
+				max-width: 150px;
+			}
+		}
+
+		.card-list{
+			font-size: 12px;
+		}
+	}
+}

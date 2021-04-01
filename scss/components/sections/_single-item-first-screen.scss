@@ -1,0 +1,105 @@
+.single-item-first-screen{
+	padding: 50px 0;
+	background: #fff;
+	box-shadow: $shadow;
+	border-radius: 0 0 $r $r;
+	position: relative;
+
+	&:before{
+		content: '';
+		display: block;
+		background: #fff;
+		box-shadow: $shadow;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: calc(100% - 6px);
+		border-radius: 0 0 $r $r;
+	}
+
+	.container{
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.single-item-card{
+	display: grid;
+	grid-template-columns: 1fr 440px;
+	grid-gap: 80px;
+
+	.card-content{
+		display: grid;
+		grid-template-columns: 220px 1fr;
+		grid-gap: 55px 40px;
+	}
+
+	.card-bottom{
+		grid-column: 1 / -1;
+	}
+
+	.card-image{
+		max-width: 220px;
+	}
+
+	.card-about{
+		margin-top: 50px;
+		font-size: 14px;
+		line-height: 1.57;
+
+		a{
+			color: $primary;
+
+			&:hover,
+			&:focus{
+				text-decoration: underline;
+			}
+		}
+
+		.section-caption{
+			margin-bottom: 16px;
+		}
+	}
+
+	&.single-clinic{
+		.card-content{
+			grid-template-columns: 180px 1fr;
+			grid-template-rows: 180px 1fr;
+			align-items: start;
+		}
+	}
+
+	@media screen and (max-width: 1329px){
+		grid-template-columns: 1fr 400px;
+		grid-gap: 40px;
+	}
+
+	@media screen and (max-width: 1199px){
+		grid-template-columns: 1fr 330px;
+	}
+
+	@media screen and (max-width: 991px){
+		grid-template-columns: 100%;
+	}
+
+	@media screen and (max-width: 767px){
+		.card-content{
+			grid-gap: 55px 20px;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.card-content{
+			grid-template-columns: 100% !important;
+			grid-template-rows: unset !important;
+			grid-gap: 30px;
+		}
+	}
+}
+
+.small-map-block{
+	border-radius: $r;
+	overflow: hidden;
+	margin-bottom: 20px;
+}

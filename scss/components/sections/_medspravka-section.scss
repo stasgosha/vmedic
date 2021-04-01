@@ -1,0 +1,141 @@
+.medspravka-section{
+	padding: 35px 0 20px;
+
+	.page-caption{
+		margin-bottom: 25px;
+	}
+
+	.section-inner{
+		display: grid;
+		grid-template-columns: 1fr 520px;
+		grid-gap: 30px;
+		margin-bottom: 50px;
+		align-items: start;
+
+		&.column-layout{
+			grid-template-columns: 100%;
+
+			@media screen and (min-width: 1200px){
+				.section-right{
+					grid-template-columns: 1fr 520px;
+				}
+			}
+		}
+
+		@media screen and (max-width: 1199px){
+			grid-template-columns: 100%;
+
+			.section-right{
+				grid-template-columns: 1fr 360px;
+			}
+		}
+
+		@media screen and (max-width: 991px){
+			.section-right{
+				grid-template-columns: 100%;
+			}
+		}
+	}
+
+	.search-info{
+		font-size: 16px;
+		line-height: 1.5;
+		padding-top: 6px;
+		font-weight: 500;
+		color: $text-light;
+		margin-bottom: 30px;
+
+		strong{
+			font-weight: 600;
+			color: $text-dark;
+
+		}
+
+		li{
+			margin-bottom: 12px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+
+		@media screen and (max-width: 575px){
+			font-size: 14px;
+		}
+	}
+
+	.section-info{
+		display: flex;
+		align-items: flex-start;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 30px;
+			height: 30px;
+			background: url(../img/icons/info-icon.svg) no-repeat center center / contain;
+			flex: none; margin-right: 9px;
+		}
+	}
+
+	.features-list{
+		.item{
+			margin-right: 30px;
+			grid-gap: 10px;
+			grid-template-columns: 45px 1fr;
+
+			&:last-child{
+				margin-right: 0;
+			}
+
+			.item-content{
+				max-width: unset;
+			}
+		}
+
+		@media screen and (max-width: 767px){
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media screen and (max-width: 575px){
+			grid-template-columns: 100%;
+		}
+	}
+
+	.section-right{
+		display: grid;
+		grid-gap: 35px;
+	}
+}
+
+.call-block{
+	padding: 15px 40px;
+	border-radius: $r;
+	background: $primary;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.133;
+	font-weight: 500;
+
+	.block-phone-link{
+		display: flex;
+		align-items: center;
+		color: #fff;
+		font-size: 18px;
+		font-weight: bold;
+		margin-top: 9px;
+
+		.link-icon{
+			width: 20px;
+			height: 20px;
+			flex: none;
+			margin-right: 8px;
+			fill: currentcolor;
+		}
+
+		&:hover,
+		&:focus{
+			color: $text-dark;
+		}
+	}
+}

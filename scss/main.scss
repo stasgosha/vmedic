@@ -1,0 +1,52 @@
+@import "components/fonts";
+@import "components/vars";
+@import "components/assist";
+@import "components/layout";
+@import "components/typography";
+@import "icons";
+
+// Header
+@import "components/header/header";
+@import "components/header/mobile-top-nav";
+
+// Footer
+@import "components/footer/footer";
+
+// Common
+@import "components/common/buttons";
+@import "components/common/forms";
+@import "components/common/sliders";
+@import "components/common/modals";
+@import "components/common/menu-opener";
+@import "components/common/big-search-form";
+@import "components/common/rating-block";
+@import "components/common/tabs-nav";
+// @import "components/common/video-block";
+// @import "components/common/panel";
+@import "components/common/pagination";
+// @import "components/common/tables";
+
+// Sections
+@import "components/sections/first-screen-section";
+@import "components/sections/populars-section";
+@import "components/sections/actions-section";
+@import "components/sections/partners-section";
+@import "components/sections/best-doctors-section";
+@import "components/sections/about-section";
+@import "components/sections/callback-section";
+@import "components/sections/breadcrumbs-section";
+@import "components/sections/page-filter-section";
+@import "components/sections/services-top-section";
+@import "components/sections/services-list-section";
+@import "components/sections/search-results-section";
+@import "components/sections/single-item-first-screen";
+@import "components/sections/single-item-near-section";
+@import "components/sections/single-item-info-section";
+@import "components/sections/single-item-prices-section";
+@import "components/sections/single-item-reviews-section";
+@import "components/sections/single-clinic-doctors-section";
+@import "components/sections/single-item-gallery-section";
+@import "components/sections/seo-text-section";
+@import "components/sections/specialists-section";
+@import "components/sections/medspravka-section";
+@import "components/sections/single-clinic-prices-section";

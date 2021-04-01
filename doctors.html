@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Врачи | Vmedic</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/slick.min.css">
+	<link rel="stylesheet" href="css/slick-theme.min.css">
+	<link rel="stylesheet" href="css/jcf.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="home">
+	<div class="wrapper" id="top">
+		<header class="header">
+			<div class="header-row first">
+				<div class="container">
+					<div class="header-inner">
+						<div class="header-block">
+							<a href="index.html" class="logo-block">
+								<img src="img/logo.svg" alt="VMedic">
+							</a>
+						</div>
+						<div class="header-block header-logo-descr md-hidden">
+							<div class="logo-descr"><strong>Сервис по подбору клиник и врачей</strong> в Москве и Московской области</div>
+						</div>
+						<div class="header-block md-hidden">
+							<div class="header-contacts">
+								<a href="tel:84951412281" class="phone-link">8 (495) 141-22-81</a>
+								<p class="work-time">Время работы Call-центра: <br>с 09:00 до 22:00</p>
+							</div>
+						</div>
+						<div class="header-block md-visible">
+							<button class="menu-opener" aria-label="Показать меню">
+								<span class="bar"></span>
+								<span class="bar"></span>
+								<span class="bar"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-row second md-hidden">
+				<div class="container">
+					<div class="header-inner">
+						<div class="header-block flex-auto">
+							<nav class="top-nav">
+								<ul>
+									<li class="bolder"><a href="clinics.html">Клиники</a></li>
+									<li class="bolder"><a href="doctors.html">Врачи</a></li>
+									<li class="menu-item-has-children">
+										<a href="#">Профосмотры</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Выездная медкомиссия</a></li>
+											<li><a href="#">Предрейсовый медосмотр</a></li>
+											<li><a href="#">Предварительный медицинский осмотр</a></li>
+											<li><a href="#">Предварительный медицинский осмотр</a></li>
+											<li><a href="#">Периодический медицинский осмотр работников</a></li>
+											<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children">
+										<a href="medspravka.html">Медицинские справки</a>
+										<ul class="sub-menu">
+											<li><a href="medspravka-gibdd.html">Медсправка для ГИБДД</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children">
+										<a href="#">Медкнижки</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children sub-menu-right-aligned">
+										<a href="#">Диагностика</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Выездная медкомиссия</a></li>
+											<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children highlighted sub-menu-right-aligned">
+										<a href="#">Тест на COVID-19</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Выездная медкомиссия</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header-block">
+							<div class="header-search-block">
+								<button class="block-opener" aria-label="Открыть поиск">
+									<svg class="btn-icon">
+										<use xlink:href="img/icons-sprite.svg#search"></use>
+									</svg>
+								</button>
+								<div class="block-hidden-content">
+									<form action="" class="search-form">
+										<input type="text" class="form-field">
+										<button type="submit" class="form-button">
+											<svg class="btn-icon">
+												<use xlink:href="img/icons-sprite.svg#search"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Мобильное меню -->
+			<div class="mobile-top-nav">
+				<!-- Принцип работы такой же, как и на https://goshovsky.com/projects/hlrus/ -->
+				<div class="mobile-nav">
+					<div class="nav-layer layer-1">
+						<ul>
+							<li class="bolder"><a href="clinics.html">Клиники</a></li>
+							<li class="bolder"><a href="doctors.html">Врачи</a></li>
+							<li><a href="#" data-subnav="#sub-examinations">Профосмотры</a></li>
+							<li><a href="#" data-subnav="#sub-medspravki">Медицинские справки</a></li>
+							<li><a href="#" data-subnav="#sub-medbook">Медкнижки</a></li>
+							<li><a href="#" data-subnav="#sub-diagnostic">Диагностика</a></li>
+							<li class="highlighted"><a href="#" data-subnav="#sub-covid-test">Тест на COVID-19</a></li>
+						</ul>
+
+						<div class="top-nav-footer">
+							<form action="" class="search-form">
+								<input type="text" class="form-field">
+								<button type="submit" class="form-button">
+									<svg class="btn-icon">
+										<use xlink:href="img/icons-sprite.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+
+							<div class="header-contacts">
+								<a href="tel:84951412281" class="phone-link">8 (495) 141-22-81</a>
+								<p class="work-time">Время работы Call-центра: <br>с 09:00 до 22:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="nav-layer layer-2">
+						<div class="subnav" id="sub-examinations">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Профосмотры</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+								<li><a href="#">Выездная медкомиссия</a></li>
+								<li><a href="#">Предрейсовый медосмотр</a></li>
+								<li><a href="#">Предварительный медицинский осмотр</a></li>
+								<li><a href="#">Предварительный медицинский осмотр</a></li>
+								<li><a href="#">Периодический медицинский осмотр работников</a></li>
+								<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-medspravki">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Медицинские справки</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-medbook">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Медкнижки</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-diagnostic">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Диагностика</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-sub-covid-test">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Тест на COVID-19</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- <div class="nav-layer layer-3">
+						<div class="subnav" id="sub-cat-1">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Кровельные воронки</button>
+						</div>
+						<div class="subnav" id="sub-cat-2">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Трапы</button>
+					
+							<ul class="tab-menu">
+								<li><a href="#">Пример пункта меню без подкатегорий</a></li>
+								<li class="menu-item-has-children">
+									<a href="#">Трапы для внутренних помещений</a>
+									<ul class="sub-menu">
+										<li><a href="#">Вертикальный выпуск</a></li>
+										<li><a href="#">Горизонтальный выпуск</a></li>
+										<li><a href="#">Поворотный шарнир</a></li>
+										<li><a href="#">Трапы под трубу SML</a></li>
+										<li><a href="#">Трапы с обратным клапаном</a></li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Дизайн-трапы</a>
+									<ul class="sub-menu">
+										<li><a href="#">Вертикальный выпуск</a></li>
+										<li><a href="#">Горизонтальный выпуск</a></li>
+										<li><a href="#">Люки для душевых</a></li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Трапы для подвалов и тех. помещений</a>
+									<ul class="sub-menu">
+										<li><a href="#">Вертикальный выпуск</a></li>
+										<li><a href="#">Горизонтальный выпуск</a></li>
+										<li><a href="#">Люки для душевых</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-cat-3">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Обратные клапаны</button>
+						</div>
+						<div class="subnav" id="sub-cat-4">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Сифоны</button>
+						</div>
+						<div class="subnav" id="sub-cat-5">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Воздушные клапаны</button>
+						</div>
+						<div class="subnav" id="sub-cat-6">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Арматура для подземного ввода трубопроводов</button>
+						</div>
+						<div class="subnav" id="sub-cat-7">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Комплектующие для канализации</button>
+						</div>
+						<div class="subnav" id="sub-cat-8">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Дополнительное оборудование</button>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</header>
+		<main class="page-content">
+			<section class="breadcrumbs-section">
+				<div class="container">
+					<ol class="breadcrumbs">
+						<li><a href="index.html">Vmedic</a></li>
+						<li><a href="doctors.html">Врачи</a></li>
+					</ol>
+				</div>
+			</section>
+
+			<section class="page-filter-section">
+				<div class="section-text">
+					<div class="container">
+						<h1 class="page-caption"><strong>Онлайн запись к врачам</strong> в Москве и Московской области</h1>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitasse pellentesque mauris, facilisis eu pharetra, sit pulvinar. Ultrices placerat tortor viverra diam iaculis ullamcorper integer dui, at.</p>
+					</div>
+				</div>
+
+				<div class="section-filter-block">
+					<div class="block-top">
+						<div class="container">
+							<div class="block-top-form form">
+								<div class="form-inner">
+									<div class="form-field">
+										<div class="select-field">
+											<select>
+												<option class="hideme" value="1">Спецализация врача</option>
+												<option value="2">Акушер</option>
+												<option value="3">Аллерголог</option>
+												<option value="4">Андролог</option>
+												<option value="5">Анастезиолог</option>
+												<option value="6">Хирург</option>
+												<option value="7">ЛОР</option>
+												<option value="8">Дерматолог</option>
+											</select>
+										</div>
+									</div>
+									
+									<div class="form-field">
+										<div class="select-field">
+											<select>
+												<option class="hideme" value="1">Район, метро, пригород</option>
+												<optgroup label="Район">
+													<option value="2">Акушер</option>
+													<option value="3">Аллерголог</option>
+													<option value="8">Дерматолог</option>
+												</optgroup>
+												<optgroup label="Метро">
+													<option value="22">Акушер</option>
+													<option value="23">Аллерголог</option>
+													<option value="24">Андролог</option>
+												</optgroup>
+												<optgroup label="Пригород">
+													<option value="32">Акушер</option>
+													<option value="33">Аллерголог</option>
+													<option value="34">Андролог</option>
+												</optgroup>
+											</select>
+										</div>
+									</div>
+									
+									<div class="form-field">
+										<div class="sort-by-block">
+											<div class="block-label">Сортировать:</div>
+											<div class="select-field smaller gray">
+												<select>
+													<option value="1">По популярности</option>
+												</select>
+											</div>
+										</div>
+									</div>
+
+									<button class="filter-right-btn show-more-options-btn">
+										<svg class="btn-left-icon">
+											<use xlink:href="img/icons-sprite.svg#filter"></use>
+										</svg>
+										<span class="btn-text">Расширенный поиск</span>
+										<svg class="btn-right-icon">
+											<use xlink:href="img/icons-sprite.svg#cross"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-hidden-content">
+						<div class="container">
+							<div class="block-hidden-content-inner">
+								<div class="filter-columns">
+									<div class="column">
+										<h3 class="column-caption">Стаж</h3>
+										<div class="column-fields">
+											<label class="radio">
+												<input type="radio" checked name="experience" class="visually-hidden">
+												<span class="fake-label">Любой</span>
+											</label>
+											<label class="radio">
+												<input type="radio" name="experience" class="visually-hidden">
+												<span class="fake-label">от 5 лет</span>
+											</label>
+											<label class="radio">
+												<input type="radio" name="experience" class="visually-hidden">
+												<span class="fake-label">от 10 лет</span>
+											</label>
+										</div>
+									</div>
+									<div class="column">
+										<h3 class="column-caption">Категория врача</h3>
+										<div class="column-fields">
+											<label class="radio">
+												<input type="radio" checked name="category" class="visually-hidden">
+												<span class="fake-label">Любая</span>
+											</label>
+											<label class="radio">
+												<input type="radio" name="category" class="visually-hidden">
+												<span class="fake-label">Вторая</span>
+											</label>
+											<label class="radio">
+												<input type="radio" name="category" class="visually-hidden">
+												<span class="fake-label">Первая</span>
+											</label>
+											<label class="radio">
+												<input type="radio" name="category" class="visually-hidden">
+												<span class="fake-label">Высшая</span>
+											</label>
+										</div>
+									</div>
+									<div class="column">
+										<h3 class="column-caption">Ученая степень</h3>
+										<div class="column-fields">
+											<label class="radio">
+												<input type="radio" checked name="degree" class="visually-hidden">
+												<span class="fake-label">Любая</span>
+											</label>
+											<label class="radio">
+												<input type="radio" name="degree" class="visually-hidden">
+												<span class="fake-label">Кандидат медицинских наук</span>
+											</label>
+											<label class="radio">
+												<input type="radio" name="degree" class="visually-hidden">
+												<span class="fake-label">Доктор медицинских наук</span>
+											</label>
+											<label class="radio">
+												<input type="radio" name="degree" class="visually-hidden">
+												<span class="fake-label">Профессор</span>
+											</label>
+										</div>
+									</div>
+									<div class="column">
+										<h3 class="column-caption">Пол</h3>
+										<div class="column-fields">
+											<label class="radio">
+												<input type="radio" checked name="gender" class="visually-hidden">
+												<span class="fake-label">Любой</span>
+											</label>
+											<label class="radio">
+												<input type="radio" name="gender" class="visually-hidden">
+												<span class="fake-label">Мужской</span>
+											</label>
+											<label class="radio">
+												<input type="radio" name="gender" class="visually-hidden">
+												<span class="fake-label">Женский</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="button-wrapper">
+									<button class="btn">Показать</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="search-results-section">
+				<h2 class="visually-hidden">Результаты поиска</h2>
+				<div class="container">
+					<div class="results-grid">
+						<div class="result-card single-item-scope">
+							<div class="card-left">
+								<a href="#" class="card-image">
+									<img src="img/content-images/avatar.jpg" alt="">
+								</a>
+								<div class="card-rating">
+									<div class="rating-block rating-35">
+										<div class="block-stars">
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+										</div>
+										<div class="block-value">3.5</div>
+									</div>
+									<a href="#" class="reviews-link">146 отзывов</a>
+								</div>
+							</div>
+							<div class="card-middle">
+								<h3 class="card-caption"><a href="#">Мазурова Лариса Борисовна</a></h3>
+								<p class="card-position">Гинеколог-эндокринолог  |  Врач-УЗИ, сексолог  |  Гирудотерапевт</p>
+
+								<div class="card-info">
+									<p class="experience">Медицинский стаж: <strong>27 лет</strong></p>
+									<p>Врач высшей категории, Кандидат медицинских наук</p>
+								</div>
+
+								<div class="card-price price-block">
+									<p>Стоимость приёма <br><span class="price"><small>от</small> 1 200₽</span></p>
+								</div>
+							</div>
+							<div class="card-right">
+								<div class="location-select">
+									<div class="selected-option"></div>
+									<div class="dropdown">
+										<div class="option">
+											<p class="name">Медицинский центр "СитиМед"</p>
+											<p>г. Москва, ул. Беломорская, 26</p>
+										</div>
+										<div class="option">
+											<p class="name">Медицинский центр "СитиМед"</p>
+											<p>г. Москва, ул. Беломорская, 28</p>
+										</div>
+										<div class="option">
+											<p class="name">Медицинский центр "СитиМед"</p>
+											<p>г. Москва, ул. Беломорская, 32</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="closest-stations">
+									<p class="metro-station">
+										<span class="line-color" style="background: #63C463"></span>
+										<span class="station-name">Римская</span>
+										<span class="distance">(296м)</span>
+									</p>
+									<p class="metro-station">
+										<span class="line-color" style="background: #CFD235"></span>
+										<span class="station-name">Площадь Ильича</span>
+										<span class="distance">(300м)</span>
+									</p>
+									<p class="metro-station">
+										<span class="line-color" style="background: #962929"></span>
+										<span class="station-name">Марксистская</span>
+										<span class="distance">(1,4км)</span>
+									</p>
+								</div>
+
+								<div class="card-subscribe">
+									<button class="btn btn-white btn-bigger">Записаться online</button>
+									<p>или по телефону: <a href="tel:84951203386">8 (495) 120-33-86</a></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="result-card single-item-scope">
+							<div class="card-left">
+								<a href="#" class="card-image">
+									<img src="img/content-images/avatar.jpg" alt="">
+								</a>
+								<div class="card-rating">
+									<div class="rating-block rating-35">
+										<div class="block-stars">
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+										</div>
+										<div class="block-value">3.5</div>
+									</div>
+									<a href="#" class="reviews-link">146 отзывов</a>
+								</div>
+							</div>
+							<div class="card-middle">
+								<h3 class="card-caption"><a href="#">Мазурова Лариса Борисовна</a></h3>
+								<p class="card-position">Гинеколог-эндокринолог  |  Врач-УЗИ, сексолог  |  Гирудотерапевт</p>
+
+								<div class="card-info">
+									<p class="experience">Медицинский стаж: <strong>27 лет</strong></p>
+									<p>Врач высшей категории, Кандидат медицинских наук</p>
+								</div>
+
+								<div class="card-price price-block">
+									<p>Стоимость приёма <br><span class="price"><small>от</small> 1 200₽</span></p>
+								</div>
+							</div>
+							<div class="card-right">
+								<div class="location-select">
+									<div class="selected-option"></div>
+									<div class="dropdown">
+										<div class="option">
+											<p class="name">Медицинский центр "СитиМед"</p>
+											<p>г. Москва, ул. Беломорская, 26</p>
+										</div>
+										<div class="option">
+											<p class="name">Медицинский центр "СитиМед"</p>
+											<p>г. Москва, ул. Беломорская, 28</p>
+										</div>
+										<div class="option">
+											<p class="name">Медицинский центр "СитиМед"</p>
+											<p>г. Москва, ул. Беломорская, 32</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="closest-stations">
+									<p class="metro-station">
+										<span class="line-color" style="background: #63C463"></span>
+										<span class="station-name">Римская</span>
+										<span class="distance">(296м)</span>
+									</p>
+									<p class="metro-station">
+										<span class="line-color" style="background: #CFD235"></span>
+										<span class="station-name">Площадь Ильича</span>
+										<span class="distance">(300м)</span>
+									</p>
+									<p class="metro-station">
+										<span class="line-color" style="background: #962929"></span>
+										<span class="station-name">Марксистская</span>
+										<span class="distance">(1,4км)</span>
+									</p>
+								</div>
+
+								<div class="card-subscribe">
+									<button class="btn btn-white btn-bigger">Записаться online</button>
+									<p>или по телефону: <a href="tel:84951203386">8 (495) 120-33-86</a></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="result-card single-item-scope">
+							<div class="card-left">
+								<a href="#" class="card-image">
+									<img src="img/content-images/avatar.jpg" alt="">
+								</a>
+								<div class="card-rating">
+									<div class="rating-block rating-35">
+										<div class="block-stars">
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+										</div>
+										<div class="block-value">3.5</div>
+									</div>
+									<a href="#" class="reviews-link">146 отзывов</a>
+								</div>
+							</div>
+							<div class="card-middle">
+								<h3 class="card-caption"><a href="#">Мазурова Лариса Борисовна</a></h3>
+								<p class="card-position">Гинеколог-эндокринолог  |  Врач-УЗИ, сексолог  |  Гирудотерапевт</p>
+
+								<div class="card-info">
+									<p class="experience">Медицинский стаж: <strong>27 лет</strong></p>
+									<p>Врач высшей категории, Кандидат медицинских наук</p>
+								</div>
+
+								<div class="card-price price-block">
+									<p>Стоимость приёма <br><span class="price"><small>от</small> 1 200₽</span></p>
+								</div>
+							</div>
+							<div class="card-right">
+								<div class="location-select">
+									<div class="selected-option"></div>
+									<div class="dropdown">
+										<div class="option">
+											<p class="name">Медицинский центр "СитиМед"</p>
+											<p>г. Москва, ул. Беломорская, 26</p>
+										</div>
+										<div class="option">
+											<p class="name">Медицинский центр "СитиМед"</p>
+											<p>г. Москва, ул. Беломорская, 28</p>
+										</div>
+										<div class="option">
+											<p class="name">Медицинский центр "СитиМед"</p>
+											<p>г. Москва, ул. Беломорская, 32</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="closest-stations">
+									<p class="metro-station">
+										<span class="line-color" style="background: #63C463"></span>
+										<span class="station-name">Римская</span>
+										<span class="distance">(296м)</span>
+									</p>
+									<p class="metro-station">
+										<span class="line-color" style="background: #CFD235"></span>
+										<span class="station-name">Площадь Ильича</span>
+										<span class="distance">(300м)</span>
+									</p>
+									<p class="metro-station">
+										<span class="line-color" style="background: #962929"></span>
+										<span class="station-name">Марксистская</span>
+										<span class="distance">(1,4км)</span>
+									</p>
+								</div>
+
+								<div class="card-subscribe">
+									<button class="btn btn-white btn-bigger">Записаться online</button>
+									<p>или по телефону: <a href="tel:84951203386">8 (495) 120-33-86</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="load-more">
+						<button class="btn btn-light">Загрузить еще</button>
+					</div>
+					<div class="pagination-wrapper">
+						<a href="#" class="prevnext prev disabled">
+							<svg class="link-icon">
+								<use xlink:href="img/icons-sprite.svg#arrow-left"></use>
+							</svg>
+						</a>
+						<ul class="pagination">
+							<li class="current"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+						</ul>
+						<a href="#" class="prevnext next">
+							<svg class="link-icon">
+								<use xlink:href="img/icons-sprite.svg#arrow-right"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="need-help-block">
+						<div class="block-content">
+							<h3 class="block-caption">Не нашли нужного врача?</h3>
+							<p>Позвоните нам, мы подберем для Вас врача и запишем на прием!</p>
+						</div>
+
+						<div class="block-phone">
+							<a href="84951203386" class="btn btn-darkgreen btn-bigger">
+								<svg class="btn-icon">
+									<use xlink:href="img/icons-sprite.svg#phone"></use>
+								</svg>
+								<span class="btn-text">8 (495) 120-33-86</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer" role="contentinfo">
+			<div class="footer-row first">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block footer-nav-wrapper">
+							<div class="footer-nav-columns">
+								<div class="column">
+									<h3 class="footer-caption">Сервис</h3>
+									<ul class="footer-nav">
+										<li><a href="#">О проекте</a></li>
+										<li><a href="#">Правила использования сервиса</a></li>
+										<li><a href="#">Политика конфиденциальности</a></li>
+										<li><a href="#">Партнеры</a></li>
+									</ul>
+								</div>
+								<div class="column">
+									<h3 class="footer-caption">Пациентам</h3>
+									<ul class="footer-nav">
+										<li><a href="clinics.html">Клиники</a></li>
+										<li><a href="doctors.html">Врачи</a></li>
+										<li><a href="services.html">Услуги</a></li>
+										<li><a href="#">Статьи</a></li>
+									</ul>
+								</div>
+								<div class="column">
+									<h3 class="footer-caption">Клиникам</h3>
+									<ul class="footer-nav">
+										<li><a href="#">Добавить клинику</a></li>
+										<li><a href="#">Продажа медицинского оборудования и расходных материалов</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="footer-block footer-contacts-wrapper">
+							<a href="index.html" class="footer-logo">
+								<img src="img/logo.svg" alt="">
+							</a>
+
+							<div class="contacts-info-block">
+								<p>Пишите нам на <a href="mailto:info@vmedic.ru">info@vmedic.ru</a><br>Звоните на <a href="tel:84951203386">8 (495) 120-33-86</a></p>
+								<p class="work-time">Время работы Call-центра: с 09:00 до 22:00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-row second">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block">
+							<p class="copyright">© VMEDIC 2020 <small>Цены, приведённые на сайте, не окончательные, не являются публичной офертой и носят информационный характер.</small></p>
+						</div>
+						<div class="footer-block webolution-wrapper">
+							<a href="https://webolution.ru/" class="webolution" aria-label="Создано в Webolution">
+								<img src="img/webolution.png" alt="Webolution - evolution of your business">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- <div class="modal small" id="callback-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+
+				<h3 class="modal-caption">Заказать звонок</h3>
+
+				<div class="form order-form">
+					<form action="#">
+						<div class="form-inner">
+							<div class="form-fields">
+								<div class="form-field">
+									<input type="text" class="input-field" placeholder="Ваше имя">
+								</div>
+								<div class="form-field">
+									<input type="tel" class="input-field" placeholder="Ваш телефон">
+								</div>
+							</div>
+
+							<div class="form-footer">
+								<button class="btn" type="submit">Оставить заявку</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="modal video-modal" id="video-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+				<div class="modal-video">
+					<div id="modal-video-iframe"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jcf.js"></script>
+	<script src="js/jcf.select.js"></script>
+	<!-- <script src="//www.youtube.com/iframe_api"></script> -->
+	<!-- <script src="js/wow.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

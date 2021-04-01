@@ -1,0 +1,176 @@
+.single-item-info-section{
+	padding: 40px 0;
+	background: $light-bg;
+}
+
+.info-accordion{
+	background: #fff;
+	box-shadow: $shadow;
+	border-radius: $r;
+	padding-bottom: 4px;
+	position: relative;
+	margin-bottom: 15px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	&:before{
+		content: '';
+		display: block;
+		width: 100%;
+		height: calc(100% - 4px);
+		background: #fff;
+		border-radius: $r;
+		box-shadow: $shadow;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.ac-header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 30px;
+		position: relative;
+		z-index: 2;
+		cursor: pointer;
+	}
+
+	.ac-caption{
+		@include h3;
+		color: $text-dark;
+		transition: all $t;
+
+		&:hover,
+		&:focus{
+			color: $primary;
+		}
+	}
+
+	.ac-opener{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		flex: none;
+		margin-left: 30px;
+		background: #BBF3BB;
+		display: block;
+		position: relative;
+
+		&:before,
+		&:after{
+			content: '';
+			display: block;
+			width: 18px;
+			height: 3px;
+			border-radius: 2px;
+			background: #fff;
+			position: absolute;
+			left: calc(50% - 9px);
+			top: calc(50% - 1.5px);
+			transition: all $t;
+		}
+
+		&:after{
+			transform: rotate(-90deg);
+		}
+
+		&:hover,
+		&:focus{
+			outline: none;
+			background: $primary;
+		}
+	}
+
+	.ac-content{
+		position: relative;
+		z-index: 2;
+		padding: 0 30px 32px;
+		display: none;
+
+		p{
+			margin-bottom: 12px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+
+		.speciality-category{
+			margin-bottom: 32px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&.opened{
+		.ac-opener{
+			&:after{
+				transform: rotate(0);
+			}
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.ac-header{
+			padding: 15px 20px;
+		}
+
+		.ac-content{
+			padding: 0 20px 20px;
+		}
+	}
+}
+
+.tags-list{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: -15px;
+
+	li{
+		margin-right: 15px;
+		margin-bottom: 15px;
+
+		a{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			font-size: 13px;
+			color: $text-color;
+			font-weight: 500;
+			line-height: 1.4;
+			padding: 8px 27px;
+			min-height: 46px;
+			border-radius: 23px;
+			background: #EFF3F8;
+			border: 1px solid #EFF3F8;
+
+			&:hover,
+			&:focus{
+				border-color: $primary;
+				background: #fff;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		margin-bottom: -10px;
+
+		li{
+			margin-right: 10px;
+			margin-bottom: 10px;
+
+			a{
+				font-size: 12px;
+				min-height: 36px;
+				border-radius: 18px;
+				padding: 6px 18px;
+			}
+		}
+	}
+}

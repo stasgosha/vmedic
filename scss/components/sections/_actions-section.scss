@@ -1,0 +1,152 @@
+.actions-section{
+	padding: 30px 0 85px;
+
+	@media screen and (max-width: 575px){
+		padding: 25px 0 65px;
+
+		.actions-slider{
+			width: calc(100% + 190px);
+			margin-right: -190px;
+
+			.slick-arrow.slick-next{
+				right: 182px;
+			}
+		}
+	}
+}
+
+.action-card{
+	border-radius: $r;
+	display: flex;
+	position: relative;
+	color: #fff;
+	min-height: 340px;
+	overflow: hidden;
+	height: 100%;
+
+	.card-image{
+		position: relative;
+		min-height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		
+		&:before{
+			content: '';
+			display: block;
+			padding-top: 59.649%;
+		}
+		
+		img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: block;
+			object-fit: cover;
+			object-position: center center;
+			border-radius: $r;
+		}
+	}
+
+	.card-content{
+		max-width: 350px;
+		border-radius: $r 0 0 $r;
+		padding: 20px 30px;
+		background: rgba(#465C79, .69);
+		transition: all $t;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		z-index: 2;
+	}
+
+	&:hover,
+	&:focus{
+		.card-content{
+			background: rgba(#465C79, .9);
+		}
+	}
+
+	.card-label{
+		padding: 6px 30px;
+		background: $primary;
+		color: #fff;
+		font-size: 12px;
+		line-height: 2;
+		border-radius: 18px;
+		margin-bottom: 23px;
+		margin-right: auto;
+	}
+
+	.card-caption{
+		font-size: 24px;
+		line-height: 1.1667;
+		font-weight: 500;
+		margin-bottom: 17px;
+		max-width: 245px;
+
+		strong{
+			font-weight: bold;
+		}
+	}
+
+	.card-text{
+		line-height: 1.6;
+		max-width: 245px;
+		display: block;
+	}
+
+	.card-more-link{
+		margin-left: auto;
+		margin-top: auto;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: $primary;
+		box-shadow: 0px 4px 4px rgba(70, 92, 121, 0.2);
+		transition: all $t;
+
+		.link-icon{
+			width: 6px;
+			height: 10px;
+			fill: #fff;
+			transition: all $t;
+		}
+	}
+
+	&:hover,
+	&:focus,
+	&:focus-within{
+		.card-more-link{
+			background: #fff;
+
+			.link-icon{
+				fill: $primary;
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		.card-caption{
+			font-size: 20px;
+		}
+
+		.card-text{}
+	}
+
+	@media screen and (max-width: 575px){
+		.card-caption{
+			font-size: 16px;
+		}
+
+		.card-content{
+			padding: 20px;
+		}
+	}
+}

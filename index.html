@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Главная | Vmedic</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/slick.min.css">
+	<link rel="stylesheet" href="css/slick-theme.min.css">
+	<link rel="stylesheet" href="css/jcf.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="home">
+	<div class="wrapper" id="top">
+		<header class="header">
+			<div class="header-row first">
+				<div class="container">
+					<div class="header-inner">
+						<div class="header-block">
+							<a href="index.html" class="logo-block">
+								<img src="img/logo.svg" alt="VMedic">
+							</a>
+						</div>
+						<div class="header-block header-logo-descr md-hidden">
+							<div class="logo-descr"><strong>Сервис по подбору клиник и врачей</strong> в Москве и Московской области</div>
+						</div>
+						<div class="header-block md-hidden">
+							<div class="header-contacts">
+								<a href="tel:84951412281" class="phone-link">8 (495) 141-22-81</a>
+								<p class="work-time">Время работы Call-центра: <br>с 09:00 до 22:00</p>
+							</div>
+						</div>
+						<div class="header-block md-visible">
+							<button class="menu-opener" aria-label="Показать меню">
+								<span class="bar"></span>
+								<span class="bar"></span>
+								<span class="bar"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-row second md-hidden">
+				<div class="container">
+					<div class="header-inner">
+						<div class="header-block flex-auto">
+							<nav class="top-nav">
+								<ul>
+									<li class="bolder"><a href="clinics.html">Клиники</a></li>
+									<li class="bolder"><a href="doctors.html">Врачи</a></li>
+									<li class="menu-item-has-children">
+										<a href="#">Профосмотры</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Выездная медкомиссия</a></li>
+											<li><a href="#">Предрейсовый медосмотр</a></li>
+											<li><a href="#">Предварительный медицинский осмотр</a></li>
+											<li><a href="#">Предварительный медицинский осмотр</a></li>
+											<li><a href="#">Периодический медицинский осмотр работников</a></li>
+											<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children">
+										<a href="medspravka.html">Медицинские справки</a>
+										<ul class="sub-menu">
+											<li><a href="medspravka-gibdd.html">Медсправка для ГИБДД</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children">
+										<a href="#">Медкнижки</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children sub-menu-right-aligned">
+										<a href="#">Диагностика</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Выездная медкомиссия</a></li>
+											<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children highlighted sub-menu-right-aligned">
+										<a href="#">Тест на COVID-19</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Выездная медкомиссия</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header-block">
+							<div class="header-search-block">
+								<button class="block-opener" aria-label="Открыть поиск">
+									<svg class="btn-icon">
+										<use xlink:href="img/icons-sprite.svg#search"></use>
+									</svg>
+								</button>
+								<div class="block-hidden-content">
+									<form action="" class="search-form">
+										<input type="text" class="form-field">
+										<button type="submit" class="form-button">
+											<svg class="btn-icon">
+												<use xlink:href="img/icons-sprite.svg#search"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Мобильное меню -->
+			<div class="mobile-top-nav">
+				<!-- Принцип работы такой же, как и на https://goshovsky.com/projects/hlrus/ -->
+				<div class="mobile-nav">
+					<div class="nav-layer layer-1">
+						<ul>
+							<li class="bolder"><a href="clinics.html">Клиники</a></li>
+							<li class="bolder"><a href="doctors.html">Врачи</a></li>
+							<li><a href="#" data-subnav="#sub-examinations">Профосмотры</a></li>
+							<li><a href="#" data-subnav="#sub-medspravki">Медицинские справки</a></li>
+							<li><a href="#" data-subnav="#sub-medbook">Медкнижки</a></li>
+							<li><a href="#" data-subnav="#sub-diagnostic">Диагностика</a></li>
+							<li class="highlighted"><a href="#" data-subnav="#sub-covid-test">Тест на COVID-19</a></li>
+						</ul>
+
+						<div class="top-nav-footer">
+							<form action="" class="search-form">
+								<input type="text" class="form-field">
+								<button type="submit" class="form-button">
+									<svg class="btn-icon">
+										<use xlink:href="img/icons-sprite.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+
+							<div class="header-contacts">
+								<a href="tel:84951412281" class="phone-link">8 (495) 141-22-81</a>
+								<p class="work-time">Время работы Call-центра: <br>с 09:00 до 22:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="nav-layer layer-2">
+						<div class="subnav" id="sub-examinations">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Профосмотры</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+								<li><a href="#">Выездная медкомиссия</a></li>
+								<li><a href="#">Предрейсовый медосмотр</a></li>
+								<li><a href="#">Предварительный медицинский осмотр</a></li>
+								<li><a href="#">Предварительный медицинский осмотр</a></li>
+								<li><a href="#">Периодический медицинский осмотр работников</a></li>
+								<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-medspravki">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Медицинские справки</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-medbook">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Медкнижки</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-diagnostic">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Диагностика</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-sub-covid-test">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Тест на COVID-19</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- <div class="nav-layer layer-3">
+						<div class="subnav" id="sub-cat-1">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Кровельные воронки</button>
+						</div>
+						<div class="subnav" id="sub-cat-2">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Трапы</button>
+					
+							<ul class="tab-menu">
+								<li><a href="#">Пример пункта меню без подкатегорий</a></li>
+								<li class="menu-item-has-children">
+									<a href="#">Трапы для внутренних помещений</a>
+									<ul class="sub-menu">
+										<li><a href="#">Вертикальный выпуск</a></li>
+										<li><a href="#">Горизонтальный выпуск</a></li>
+										<li><a href="#">Поворотный шарнир</a></li>
+										<li><a href="#">Трапы под трубу SML</a></li>
+										<li><a href="#">Трапы с обратным клапаном</a></li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Дизайн-трапы</a>
+									<ul class="sub-menu">
+										<li><a href="#">Вертикальный выпуск</a></li>
+										<li><a href="#">Горизонтальный выпуск</a></li>
+										<li><a href="#">Люки для душевых</a></li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Трапы для подвалов и тех. помещений</a>
+									<ul class="sub-menu">
+										<li><a href="#">Вертикальный выпуск</a></li>
+										<li><a href="#">Горизонтальный выпуск</a></li>
+										<li><a href="#">Люки для душевых</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-cat-3">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Обратные клапаны</button>
+						</div>
+						<div class="subnav" id="sub-cat-4">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Сифоны</button>
+						</div>
+						<div class="subnav" id="sub-cat-5">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Воздушные клапаны</button>
+						</div>
+						<div class="subnav" id="sub-cat-6">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Арматура для подземного ввода трубопроводов</button>
+						</div>
+						<div class="subnav" id="sub-cat-7">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Комплектующие для канализации</button>
+						</div>
+						<div class="subnav" id="sub-cat-8">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Дополнительное оборудование</button>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</header>
+		<main class="page-content">
+			<section class="first-screen-section">
+				<div class="container">
+					<div class="section-inner">
+						<div class="section-content">
+							<h1 class="page-caption">
+								<svg class="caption-icon">
+									<use xlink:href="img/icons-sprite.svg#heartline"></use>
+								</svg>
+								<strong>Vmedic - <br class="sm-visible-inline">медицинский сервис</strong>, который позволяет получить полную информацию о врачах и клиниках Москвы и Московской области!
+							</h1>
+
+							<div class="section-text">
+								<p>С помощью нашего сервиса Вы можете записаться на прием к врачу, выбрать клинику для оформления медицинской справки, медкнижки, для сдачи анализов, а также для прохождения медицинского осмотра и диагностического обследования.</p>
+							</div>
+
+							<div class="section-form">
+								<div class="big-search-form form">
+									<form action="">
+										<div class="form-inner">
+											<div class="form-field">
+												<div class="select-field">
+													<select>
+														<option class="hideme" value="1">Врач, услуга, клиника, симптом</option>
+														<optgroup label="Врач">
+															<option value="2">Акушер</option>
+															<option value="3">Аллерголог</option>
+															<option value="4">Андролог</option>
+															<option value="5">Анастезиолог</option>
+															<option value="6">Хирург</option>
+															<option value="7">ЛОР</option>
+															<option value="8">Дерматолог</option>
+														</optgroup>
+														<optgroup label="Услуга">
+															<option value="22">Акушер</option>
+															<option value="23">Аллерголог</option>
+															<option value="24">Андролог</option>
+															<option value="25">Анастезиолог</option>
+															<option value="26">Хирург</option>
+															<option value="27">ЛОР</option>
+															<option value="28">Дерматолог</option>
+														</optgroup>
+														<optgroup label="Клиника">
+															<option value="32">Акушер</option>
+															<option value="33">Аллерголог</option>
+															<option value="34">Андролог</option>
+															<option value="35">Анастезиолог</option>
+															<option value="36">Хирург</option>
+															<option value="37">ЛОР</option>
+															<option value="38">Дерматолог</option>
+														</optgroup>
+														<optgroup label="Симптом">
+															<option value="42">Акушер</option>
+															<option value="43">Аллерголог</option>
+															<option value="44">Андролог</option>
+															<option value="45">Анастезиолог</option>
+															<option value="46">Хирург</option>
+															<option value="47">ЛОР</option>
+															<option value="48">Дерматолог</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-field">
+												<div class="select-field">
+													<select>
+														<option class="hideme" value="1">Район, метро, пригород</option>
+														<optgroup label="Район">
+															<option value="2">Акушер</option>
+															<option value="3">Аллерголог</option>
+															<option value="8">Дерматолог</option>
+														</optgroup>
+														<optgroup label="Метро">
+															<option value="22">Акушер</option>
+															<option value="23">Аллерголог</option>
+															<option value="24">Андролог</option>
+														</optgroup>
+														<optgroup label="Пригород">
+															<option value="32">Акушер</option>
+															<option value="33">Аллерголог</option>
+															<option value="34">Андролог</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-button">
+												<button class="btn btn-bigger btn-accent">
+													<svg class="btn-icon">
+														<use xlink:href="img/icons-sprite.svg#search"></use>
+													</svg>
+													<span class="btn-text">Подобрать</span>
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<div class="section-features">
+								<div class="features-list">
+									<div class="item">
+										<div class="item-icon">
+											<img src="img/big-icons/fire.svg" alt="">
+										</div>
+										<p class="item-content"><strong>Актуальные цены</strong>, акции и скидки</p>
+									</div>
+									<div class="item">
+										<div class="item-icon">
+											<img src="img/big-icons/chat-bubble.svg" alt="">
+										</div>
+										<p class="item-content"><strong>Реальные отзывы</strong> клиентов клиник</p>
+									</div>
+									<div class="item">
+										<div class="item-icon">
+											<img src="img/big-icons/calendar.svg" alt="">
+										</div>
+										<p class="item-content">Онлайн-запись <strong>без комиссии</strong></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section-image">
+							<div class="heart-image-wrapper">
+								<svg class="heart-img" viewBox="0 0 637 519" preserveAspectRatio="xMidYMid slice">
+									<defs>
+										<mask id="heart">
+											<path fill="#fff" d="M597 62c-61-73-169-83-242-22l-36 30-37-30A172 172 0 1062 305l257 214 256-214a180 180 0 008-8h1l2-2c63-63 69-164 11-233z"></path>
+										</mask>
+									</defs>
+									<image height="100%" width="100%" preserveAspectRatio="xMidYMid slice" xlink:href="img/content-images/firsr-screen-image.jpg" mask="url(#heart)"></image>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="populars-section">
+				<div class="container">
+					<div class="section-caption">
+						<h2 class="sc-title"><strong>Популярное</strong> в Москве и Московской области</h2>
+					</div>
+
+					<div class="section-inner">
+						<div class="populars-card">
+							<h3 class="card-caption">
+								<svg class="caption-icon">
+									<use xlink:href="img/icons-sprite.svg#heartline"></use>
+								</svg>
+								Услуги
+							</h3>
+
+							<ul class="card-list">
+								<li><a href="#">Оформление медкнижек</a></li>
+								<li><a href="#">Справка для ГИБДД</a></li>
+								<li><a href="#">Справка для ФМС</a></li>
+								<li><a href="#">Справки для работы</a></li>
+								<li><a href="#">Справки для учебы</a></li>
+								<li><a href="#">Справки для спорта</a></li>
+								<li><a href="#">Медсправка в бассейн</a></li>
+								<li><a href="#">Медицинский осмотр</a></li>
+								<li><a href="#">Выездная медкомиссия</a></li>
+								<li><a href="#">Тест на COVID-19</a></li>
+								<li><a href="#">Тест на антитела</a></li>
+								<li><a href="#">Флюорография</a></li>
+								<li><a href="#">ЭКГ</a></li>
+								<li><a href="#">ЭЭГ</a></li>
+								<li><a href="#">УЗИ брюшной полости</a></li>
+								<li><a href="#">УЗИ органов малого таза</a></li>
+								<li><a href="#">УЗИ почек</a></li>
+								<li><a href="#">МРТ головного мозга</a></li>
+							</ul>
+
+							<div class="card-footer">
+								<a href="services.html" class="btn btn-light">Все услуги</a>
+							</div>
+						</div>
+
+						<div class="populars-card">
+							<h3 class="card-caption">
+								<svg class="caption-icon">
+									<use xlink:href="img/icons-sprite.svg#heartline"></use>
+								</svg>
+								Врачи
+							</h3>
+
+							<ul class="card-list">
+								<li><a href="#">Невролог</a></li>
+								<li><a href="#">Гинеколог</a></li>
+								<li><a href="#">Уролог</a></li>
+								<li><a href="#">Психотерапевт</a></li>
+								<li><a href="#">Онколог</a></li>
+								<li><a href="#">Педиатр</a></li>
+								<li><a href="#">Детский невролог</a></li>
+								<li><a href="#">Детский ортопед</a></li>
+								<li><a href="#">Детский аллерголог</a></li>
+								<li><a href="#">Невролог</a></li>
+								<li><a href="#">Гинеколог</a></li>
+								<li><a href="#">Уролог</a></li>
+								<li><a href="#">Психотерапевт</a></li>
+								<li><a href="#">Онколог</a></li>
+								<li><a href="#">Педиатр</a></li>
+							</ul>
+
+							<div class="card-footer">
+								<a href="doctors.html" class="btn btn-light">Все врачи</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="actions-section">
+				<div class="container">
+					<div class="section-caption">
+						<h2 class="sc-title">Актуальные <strong>акции в клиниках</strong></h2>
+					</div>
+
+					<div class="default-slider-wrapper">
+						<div class="actions-slider default-slider">
+							<div class="slide">
+								<a href="#" class="action-card">
+									<div class="card-image">
+										<img src="img/content-images/actions/image-1.jpg" alt="">
+									</div>
+									<div class="card-content">
+										<div class="card-label">Акция</div>
+										<h3 class="card-caption">Скидка 10% на тест <strong>STANDARD Q COVID-19 AG</strong></h3>
+										<p class="card-text">Для самостоятельного тестирования на коронавирусную инфекцию</p>
+
+										<div class="card-more-link" aria-label="Читать подробнее">
+											<svg class="link-icon">
+												<use xlink:href="img/icons-sprite.svg#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="slide">
+								<a href="#" class="action-card">
+									<div class="card-image">
+										<img src="img/content-images/actions/image-2.jpg" alt="">
+									</div>
+									<div class="card-content">
+										<div class="card-label">Акция</div>
+										<h3 class="card-caption">Компьютерная томография <strong>со скидкой 15%</strong></h3>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu in consectetur in id diam erat massa, dolor.</p>
+
+										<div class="card-more-link" aria-label="Читать подробнее">
+											<svg class="link-icon">
+												<use xlink:href="img/icons-sprite.svg#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="slide">
+								<a href="#" class="action-card">
+									<div class="card-image">
+										<img src="img/content-images/actions/image-1.jpg" alt="">
+									</div>
+									<div class="card-content">
+										<div class="card-label">Акция</div>
+										<h3 class="card-caption">Скидка 10% на тест <strong>STANDARD Q COVID-19 AG</strong></h3>
+										<p class="card-text">Для самостоятельного тестирования на коронавирусную инфекцию</p>
+
+										<div class="card-more-link" aria-label="Читать подробнее">
+											<svg class="link-icon">
+												<use xlink:href="img/icons-sprite.svg#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="best-doctors-section">
+				<div class="container">
+					<div class="section-caption">
+						<h2 class="sc-title"><strong>Лучшие</strong> врачи</h2>
+					</div>
+
+					<div class="doctors-grid">
+						<div class="doctor-card">
+							<div class="card-inner">
+								<a href="single-doctor.html" class="card-image">
+									<img src="img/content-images/avatar.jpg" alt="">
+								</a>
+								
+								<div class="card-content">
+									<div class="card-header">
+										<!-- Значение рейтинга должно быть кратно 5 -->
+										<!-- То есть, если рейтинг доктора 4.3 - в классе нужно указать rating-45 -->
+										<div class="rating-block rating-15">
+											<div class="block-stars">
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+											</div>
+											<div class="block-value">5.0</div>
+										</div>
+										<a href="#" class="reviews-link">146 отзывов</a>
+									</div>
+								
+									<h3 class="card-caption"><a href="single-doctor.html">Мазурова Лариса Борисовна</a></h3>
+									<p>Гинеколог-эндокринолог, врач-УЗИ, сексолог, гирудотерапевт</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="doctor-card">
+							<div class="card-inner">
+								<a href="single-doctor.html" class="card-image">
+									<img src="img/content-images/avatar.jpg" alt="">
+								</a>
+								
+								<div class="card-content">
+									<div class="card-header">
+										<div class="rating-block">
+											<div class="block-stars">
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+											</div>
+											<div class="block-value">5.0</div>
+										</div>
+										<a href="#2" class="reviews-link">146 отзывов</a>
+									</div>
+								
+									<h3 class="card-caption"><a href="single-doctor.html">Мазурова Лариса Борисовна</a></h3>
+									<p>Гинеколог-эндокринолог, врач-УЗИ, сексолог, гирудотерапевт</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="doctor-card">
+							<div class="card-inner">
+								<a href="single-doctor.html" class="card-image">
+									<img src="img/content-images/avatar.jpg" alt="">
+								</a>
+								
+								<div class="card-content">
+									<div class="card-header">
+										<div class="rating-block">
+											<div class="block-stars">
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+											</div>
+											<div class="block-value">5.0</div>
+										</div>
+										<a href="#" class="reviews-link">146 отзывов</a>
+									</div>
+								
+									<h3 class="card-caption"><a href="single-doctor.html">Мазурова Лариса Борисовна</a></h3>
+									<p>Гинеколог-эндокринолог, врач-УЗИ, сексолог, гирудотерапевт</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="doctor-card">
+							<div class="card-inner">
+								<a href="single-doctor.html" class="card-image">
+									<img src="img/content-images/avatar.jpg" alt="">
+								</a>
+								
+								<div class="card-content">
+									<div class="card-header">
+										<div class="rating-block">
+											<div class="block-stars">
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+											</div>
+											<div class="block-value">5.0</div>
+										</div>
+										<a href="#" class="reviews-link">146 отзывов</a>
+									</div>
+								
+									<h3 class="card-caption"><a href="single-doctor.html">Мазурова Лариса Борисовна</a></h3>
+									<p>Гинеколог-эндокринолог, врач-УЗИ, сексолог, гирудотерапевт</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="doctor-card">
+							<div class="card-inner">
+								<a href="single-doctor.html" class="card-image">
+									<img src="img/content-images/avatar.jpg" alt="">
+								</a>
+								
+								<div class="card-content">
+									<div class="card-header">
+										<div class="rating-block">
+											<div class="block-stars">
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+											</div>
+											<div class="block-value">5.0</div>
+										</div>
+										<a href="#" class="reviews-link">146 отзывов</a>
+									</div>
+								
+									<h3 class="card-caption"><a href="single-doctor.html">Мазурова Лариса Борисовна</a></h3>
+									<p>Гинеколог-эндокринолог, врач-УЗИ, сексолог, гирудотерапевт</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="doctor-card">
+							<div class="card-inner">
+								<a href="single-doctor.html" class="card-image">
+									<img src="img/content-images/avatar.jpg" alt="">
+								</a>
+								
+								<div class="card-content">
+									<div class="card-header">
+										<div class="rating-block">
+											<div class="block-stars">
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+												<div class="star"></div>
+											</div>
+											<div class="block-value">5.0</div>
+										</div>
+										<a href="#" class="reviews-link">146 отзывов</a>
+									</div>
+								
+									<h3 class="card-caption"><a href="single-doctor.html">Мазурова Лариса Борисовна</a></h3>
+									<p>Гинеколог-эндокринолог, врач-УЗИ, сексолог, гирудотерапевт</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-footer">
+						<a href="doctors.html" class="btn">Все врачи</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="partners-section">
+				<div class="container">
+					<div class="section-header">
+						<div class="section-caption">
+							<h2 class="sc-title"><strong>Клиники</strong> партнеры</h2>
+						</div>
+
+						<a href="#" class="more-link sm-hidden">
+							<span class="link-text">Узнать подробности о сотрудничестве</span>
+							<svg class="link-icon">
+								<use xlink:href="img/icons-sprite.svg#arrow-right"></use>
+							</svg>
+						</a>
+					</div>
+
+					<div class="default-slider-wrapper">
+						<div class="partners-slider defaulte-slider">
+							<div class="slide">
+								<img src="img/content-images/partners/logo-clinic-gms.jpg" alt="">
+							</div>
+							<div class="slide">
+								<img src="img/content-images/partners/logo-clinic-poliklinika-ru.jpg" alt="">
+							</div>
+							<div class="slide">
+								<img src="img/content-images/partners/logo-clinic-niarmedic.jpg" alt="">
+							</div>
+							<div class="slide">
+								<img src="img/content-images/partners/logo-clinic-medsi.jpg" alt="">
+							</div>
+							<div class="slide">
+								<img src="img/content-images/partners/logo-clinic-abc-medicine.jpg" alt="">
+							</div>
+							<div class="slide">
+								<img src="img/content-images/partners/logo-clinic-niarmedic.jpg" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="section-mobile-link sm-visible-flex">
+						<a href="#" class="more-link">
+							<span class="link-text">Узнать подробности о сотрудничестве</span>
+							<svg class="link-icon">
+								<use xlink:href="img/icons-sprite.svg#arrow-right"></use>
+							</svg>
+						</a>
+					</div>
+
+					<div class="section-footer">
+						<a href="clinics.html" class="btn">Все клиники</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="about-section">
+				<div class="container">
+					<div class="section-inner">
+						<div class="section-content">
+							<div class="section-caption">
+								<h2 class="sc-title">
+									<svg class="title-icon">
+										<use xlink:href="img/icons-sprite.svg#heartbeat"></use>
+									</svg>
+									О проекте <strong>Vmedic</strong>
+								</h2>
+							</div>
+
+							<div class="section-text tpg">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitasse pellentesque mauris, facilisis eu pharetra, sit pulvinar. Ultrices placerat tortor viverra diam iaculis ullamcorper integer dui, at. Vivamus commodo risus turpis et. Sollicitudin at pellentesque lacus in ipsum vulputate. Viverra condimentum felis, auctor at sed augue. Sed morbi dolor eleifend vitae. Eu ullamcorper at libero nunc molestie lorem proin in. Hendrerit ultricies congue vulputate nisl amet. Egestas non nunc vehicula nunc. Amet ipsum et faucibus risus. Amet in amet molestie amet. </p>
+								<p>Orci, lectus consequat nisl ut diam odio sodales. In sit libero, cras congue nec egestas nunc donec. Augue lectus morbi potenti donec tellus in ac enim, consectetur. Nunc interdum pharetra mollis condimentum. Mattis et, nunc quam sollicitudin auctor pharetra, lectus mattis turpis. Varius egestas elit turpis fermentum at sit. At tempor suspendisse sem et nulla ut sodales orci.</p>
+							</div>
+						</div>
+						<div class="section-image">
+							<img src="img/content-images/about-image.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="callback-section">
+				<div class="container">
+					<div class="section-caption">
+						<svg class="sc-icon">
+							<use xlink:href="img/icons-sprite.svg#heartbeat"></use>
+						</svg>
+						<h2 class="sc-title">Поможем выбрать клинику или найти нужного врача</h2>
+					</div>
+
+					<div class="section-text">
+						<p>Свяжитесь с нами по телефону <a href="tel:84951203386">8 (495) 120-33-86</a><br>или оставьте заявку, мы свяжемся с Вами в ближайщее время</p>
+					</div>
+
+					<div class="section-footer">
+						<button class="btn btn-bigger btn-dark" data-modal="#callback-modal">Позвоните мне</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer" role="contentinfo">
+			<div class="footer-row first">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block footer-nav-wrapper">
+							<div class="footer-nav-columns">
+								<div class="column">
+									<h3 class="footer-caption">Сервис</h3>
+									<ul class="footer-nav">
+										<li><a href="#">О проекте</a></li>
+										<li><a href="#">Правила использования сервиса</a></li>
+										<li><a href="#">Политика конфиденциальности</a></li>
+										<li><a href="#">Партнеры</a></li>
+									</ul>
+								</div>
+								<div class="column">
+									<h3 class="footer-caption">Пациентам</h3>
+									<ul class="footer-nav">
+										<li><a href="clinics.html">Клиники</a></li>
+										<li><a href="doctors.html">Врачи</a></li>
+										<li><a href="services.html">Услуги</a></li>
+										<li><a href="#">Статьи</a></li>
+									</ul>
+								</div>
+								<div class="column">
+									<h3 class="footer-caption">Клиникам</h3>
+									<ul class="footer-nav">
+										<li><a href="#">Добавить клинику</a></li>
+										<li><a href="#">Продажа медицинского оборудования и расходных материалов</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="footer-block footer-contacts-wrapper">
+							<a href="index.html" class="footer-logo">
+								<img src="img/logo.svg" alt="">
+							</a>
+
+							<div class="contacts-info-block">
+								<p>Пишите нам на <a href="mailto:info@vmedic.ru">info@vmedic.ru</a><br>Звоните на <a href="tel:84951203386">8 (495) 120-33-86</a></p>
+								<p class="work-time">Время работы Call-центра: с 09:00 до 22:00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-row second">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block">
+							<p class="copyright">© VMEDIC 2020 <small>Цены, приведённые на сайте, не окончательные, не являются публичной офертой и носят информационный характер.</small></p>
+						</div>
+						<div class="footer-block webolution-wrapper">
+							<a href="https://webolution.ru/" class="webolution" aria-label="Создано в Webolution">
+								<img src="img/webolution.png" alt="Webolution - evolution of your business">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- <div class="modal small" id="callback-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+
+				<h3 class="modal-caption">Заказать звонок</h3>
+
+				<div class="form order-form">
+					<form action="#">
+						<div class="form-inner">
+							<div class="form-fields">
+								<div class="form-field">
+									<input type="text" class="input-field" placeholder="Ваше имя">
+								</div>
+								<div class="form-field">
+									<input type="tel" class="input-field" placeholder="Ваш телефон">
+								</div>
+							</div>
+
+							<div class="form-footer">
+								<button class="btn" type="submit">Оставить заявку</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="modal video-modal" id="video-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+				<div class="modal-video">
+					<div id="modal-video-iframe"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jcf.js"></script>
+	<script src="js/jcf.select.js"></script>
+	<!-- <script src="//www.youtube.com/iframe_api"></script> -->
+	<!-- <script src="js/wow.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+.btn{
+	font-weight: 600;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.3;
+	padding: 10px 40px;
+	min-height: 52px;
+	border-radius: 26px;
+	font-family: inherit;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: all $t;
+	cursor: pointer;
+	appearance: none;
+	white-space: nowrap;
+	border: 1px solid transparent;
+	color: #fff;
+	box-shadow: 0px 4px 4px rgba(70, 92, 121, 0.2);
+	background: $primary;
+
+	&:hover,
+	&:focus{
+		background: $accent;
+		outline: none;
+		background-position: center center;
+	}
+
+	// &:active{
+	// 	transform: translateY(2px);
+	// }
+
+	.btn-icon{
+		width: 20px;
+		height: 20px;
+		flex: none;
+		display: block;
+		fill: currentcolor;
+
+		&:first-child{
+			margin-right: 10px;
+		}
+
+		&:last-child{
+			margin-left: 10px;
+		}
+	}
+
+	&.btn-bigger{
+		min-height: 60px;
+		font-size: 16px;
+		line-height: 1.5;
+		border-radius: 30px;
+	}
+
+	&.btn-light{
+		border-color: $primary;
+		background: transparent;
+		color: $primary;
+		font-weight: 500;
+		box-shadow: none;
+
+		&:hover,
+		&:focus{
+			box-shadow: 0px 4px 4px rgba(70, 92, 121, 0.2);
+			background: $primary;
+			color: #fff;
+		}
+	}
+
+	&.btn-accent{
+		background: $accent;
+
+		&:hover,
+		&:focus{
+			background: $primary;
+		}
+	}
+
+	&.btn-dark{
+		background: #657991;
+
+		&:hover,
+		&:focus{
+			background: #fff;
+			color: $primary;
+		}
+	}
+
+	&.btn-darkgreen{
+		background: $darkgreen;
+		color: #fff;
+
+		&:hover,
+		&:focus{
+			background: $primary;
+		}
+	}
+
+	&.btn-white{
+		background: #fff;
+		color: $primary;
+
+		&:hover,
+		&:focus{
+			background: $primary;
+			color: #fff;
+		}
+	}
+
+	&.fullwidth{
+		width: 100%;
+	}
+
+	@media screen and (max-width: 575px){
+		min-height: 42px;
+		font-size: 12px;
+		border-radius: 21px;
+
+		&.btn-bigger{
+			min-height: 52px;
+			font-size: 12px;
+			border-radius: 26px;
+		}
+	}
+}
+
+.more-link{
+	display: flex;
+	align-items: center;
+	color: #657991;
+	font-weight: 500;
+	
+	.link-text{
+		font-size: 14px;
+		line-height: 24px;
+		display: block;
+		border-bottom: 1px dashed currentColor;
+	}
+
+	.link-icon{
+		flex: none;
+		width: 6px;
+		height: 10px;
+		margin-left: 14px;
+		fill: currentcolor;
+	}
+
+	&:hover,
+	&:focus{
+		color: $primary;
+	}
+
+	@media screen and (max-width: 575px){
+		.link-text{
+			font-size: 12px;
+			line-height: 1.333;
+		}
+	}
+
+	&.color-primary{
+		color: $primary;
+
+		&:hover,
+		&:focus{
+			color: $darkgreen;
+		}
+	}
+}

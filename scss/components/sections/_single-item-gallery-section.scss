@@ -1,0 +1,51 @@
+.single-item-gallery-section{
+	padding: 72px 0 80px;
+
+	& + &{
+		padding-top: 0;
+	}
+}
+
+.gallery-slider{
+	a{
+		position: relative;
+		display: block;
+		width: 100%;
+		
+		&:before{
+			content: '';
+			display: block;
+			padding-top: 91.892%;
+		}
+		
+		img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: block;
+			object-fit: cover;
+			object-position: center center;
+			border-radius: $r;
+		}
+	}
+}
+
+.licenses-slider{
+	a{
+		display: block;
+		padding: 15px 10px;
+		background: #fff;
+		box-shadow: $shadow;
+		max-width: 255px;
+		margin-left: auto;
+		margin-right: auto;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
