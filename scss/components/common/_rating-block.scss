@@ -132,6 +132,21 @@
 		}
 	}
 
+	&.small{
+		.block-stars{
+			display: block;
+			margin-right: 4px;
+
+			.star:nth-child(1) ~ .star{
+				display: none;
+			}
+		}
+
+		.block-value{
+			font-size: 14px;
+		}
+	}
+
 	@media screen and (max-width: 575px){
 		.block-stars{
 			display: block;

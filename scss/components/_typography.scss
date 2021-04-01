@@ -213,6 +213,10 @@ body{
 		color: $primary;
 	}
 
+	&.small{
+		font-size: 12px;
+	}
+
 	@media screen and (max-width: 575px){
 		font-size: 12px;
 	}

@@ -233,9 +233,7 @@
 
 		.item{
 			margin-bottom: 6px;
-			display: grid;
-			grid-template-columns: 18px 1fr;
-			grid-gap: 9px;
+			display: flex;
 			color: $text-light;
 
 			.item-icon{
@@ -244,6 +242,7 @@
 				width: 18px;
 				height: 20px;
 				transform: translateY(10%);
+				margin-right: 9px;
 			}
 
 			&:last-child{

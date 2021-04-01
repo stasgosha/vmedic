@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Клиники | Vmedic</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/slick.min.css">
+	<link rel="stylesheet" href="css/slick-theme.min.css">
+	<link rel="stylesheet" href="css/jcf.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="home">
+	<div class="wrapper" id="top">
+		<header class="header">
+			<div class="header-row first">
+				<div class="container">
+					<div class="header-inner">
+						<div class="header-block">
+							<a href="index.html" class="logo-block">
+								<img src="img/logo.svg" alt="VMedic">
+							</a>
+						</div>
+						<div class="header-block header-logo-descr md-hidden">
+							<div class="logo-descr"><strong>Сервис по подбору клиник и врачей</strong> в Москве и Московской области</div>
+						</div>
+						<div class="header-block md-hidden">
+							<div class="header-contacts">
+								<a href="tel:84951412281" class="phone-link">8 (495) 141-22-81</a>
+								<p class="work-time">Время работы Call-центра: <br>с 09:00 до 22:00</p>
+							</div>
+						</div>
+						<div class="header-block md-visible">
+							<button class="menu-opener" aria-label="Показать меню">
+								<span class="bar"></span>
+								<span class="bar"></span>
+								<span class="bar"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-row second md-hidden">
+				<div class="container">
+					<div class="header-inner">
+						<div class="header-block flex-auto">
+							<nav class="top-nav">
+								<ul>
+									<li class="bolder"><a href="clinics.html">Клиники</a></li>
+									<li class="bolder"><a href="doctors.html">Врачи</a></li>
+									<li class="menu-item-has-children">
+										<a href="#">Профосмотры</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Выездная медкомиссия</a></li>
+											<li><a href="#">Предрейсовый медосмотр</a></li>
+											<li><a href="#">Предварительный медицинский осмотр</a></li>
+											<li><a href="#">Предварительный медицинский осмотр</a></li>
+											<li><a href="#">Периодический медицинский осмотр работников</a></li>
+											<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children">
+										<a href="medspravka.html">Медицинские справки</a>
+										<ul class="sub-menu">
+											<li><a href="medspravka-gibdd.html">Медсправка для ГИБДД</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children">
+										<a href="#">Медкнижки</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children sub-menu-right-aligned">
+										<a href="#">Диагностика</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Выездная медкомиссия</a></li>
+											<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children highlighted sub-menu-right-aligned">
+										<a href="#">Тест на COVID-19</a>
+										<ul class="sub-menu">
+											<li><a href="#">Профосмотры для организаций</a></li>
+											<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+											<li><a href="#">Выездная медкомиссия</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header-block">
+							<div class="header-search-block">
+								<button class="block-opener" aria-label="Открыть поиск">
+									<svg class="btn-icon">
+										<use xlink:href="img/icons-sprite.svg#search"></use>
+									</svg>
+								</button>
+								<div class="block-hidden-content">
+									<form action="" class="search-form">
+										<input type="text" class="form-field">
+										<button type="submit" class="form-button">
+											<svg class="btn-icon">
+												<use xlink:href="img/icons-sprite.svg#search"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Мобильное меню -->
+			<div class="mobile-top-nav">
+				<!-- Принцип работы такой же, как и на https://goshovsky.com/projects/hlrus/ -->
+				<div class="mobile-nav">
+					<div class="nav-layer layer-1">
+						<ul>
+							<li class="bolder"><a href="clinics.html">Клиники</a></li>
+							<li class="bolder"><a href="doctors.html">Врачи</a></li>
+							<li><a href="#" data-subnav="#sub-examinations">Профосмотры</a></li>
+							<li><a href="#" data-subnav="#sub-medspravki">Медицинские справки</a></li>
+							<li><a href="#" data-subnav="#sub-medbook">Медкнижки</a></li>
+							<li><a href="#" data-subnav="#sub-diagnostic">Диагностика</a></li>
+							<li class="highlighted"><a href="#" data-subnav="#sub-covid-test">Тест на COVID-19</a></li>
+						</ul>
+
+						<div class="top-nav-footer">
+							<form action="" class="search-form">
+								<input type="text" class="form-field">
+								<button type="submit" class="form-button">
+									<svg class="btn-icon">
+										<use xlink:href="img/icons-sprite.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+
+							<div class="header-contacts">
+								<a href="tel:84951412281" class="phone-link">8 (495) 141-22-81</a>
+								<p class="work-time">Время работы Call-центра: <br>с 09:00 до 22:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="nav-layer layer-2">
+						<div class="subnav" id="sub-examinations">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Профосмотры</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+								<li><a href="#">Выездная медкомиссия</a></li>
+								<li><a href="#">Предрейсовый медосмотр</a></li>
+								<li><a href="#">Предварительный медицинский осмотр</a></li>
+								<li><a href="#">Предварительный медицинский осмотр</a></li>
+								<li><a href="#">Периодический медицинский осмотр работников</a></li>
+								<li><a href="#">Аренда передвижного мобильного медицинского комплекса</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-medspravki">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Медицинские справки</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-medbook">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Медкнижки</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-diagnostic">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Диагностика</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-sub-covid-test">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Тест на COVID-19</button>
+
+							<ul>
+								<li><a href="#">Профосмотры для организаций</a></li>
+								<li><a href="#">Справка о профпригодности по приказу 302н</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- <div class="nav-layer layer-3">
+						<div class="subnav" id="sub-cat-1">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Кровельные воронки</button>
+						</div>
+						<div class="subnav" id="sub-cat-2">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Трапы</button>
+					
+							<ul class="tab-menu">
+								<li><a href="#">Пример пункта меню без подкатегорий</a></li>
+								<li class="menu-item-has-children">
+									<a href="#">Трапы для внутренних помещений</a>
+									<ul class="sub-menu">
+										<li><a href="#">Вертикальный выпуск</a></li>
+										<li><a href="#">Горизонтальный выпуск</a></li>
+										<li><a href="#">Поворотный шарнир</a></li>
+										<li><a href="#">Трапы под трубу SML</a></li>
+										<li><a href="#">Трапы с обратным клапаном</a></li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Дизайн-трапы</a>
+									<ul class="sub-menu">
+										<li><a href="#">Вертикальный выпуск</a></li>
+										<li><a href="#">Горизонтальный выпуск</a></li>
+										<li><a href="#">Люки для душевых</a></li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Трапы для подвалов и тех. помещений</a>
+									<ul class="sub-menu">
+										<li><a href="#">Вертикальный выпуск</a></li>
+										<li><a href="#">Горизонтальный выпуск</a></li>
+										<li><a href="#">Люки для душевых</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="subnav" id="sub-cat-3">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Обратные клапаны</button>
+						</div>
+						<div class="subnav" id="sub-cat-4">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Сифоны</button>
+						</div>
+						<div class="subnav" id="sub-cat-5">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Воздушные клапаны</button>
+						</div>
+						<div class="subnav" id="sub-cat-6">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Арматура для подземного ввода трубопроводов</button>
+						</div>
+						<div class="subnav" id="sub-cat-7">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Комплектующие для канализации</button>
+						</div>
+						<div class="subnav" id="sub-cat-8">
+							<button class="back-link" aria-label="Вернуться на уровень выше">Дополнительное оборудование</button>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</header>
+		<main class="page-content">
+			<section class="breadcrumbs-section">
+				<div class="container">
+					<ol class="breadcrumbs">
+						<li><a href="index.html">Vmedic</a></li>
+						<li><a href="modals.html">Попапы</a></li>
+					</ol>
+				</div>
+			</section>
+
+			<section style="padding: 90px 0;">
+				<div class="container">
+					<style>
+						.modal-buttons{
+							display: flex;
+							flex-wrap: wrap;
+						}
+
+						.modal-buttons .btn{
+							margin-right: 20px;
+							margin-bottom: 20px;
+						}
+					</style>
+					<div class="modal-buttons">
+						<button class="btn" data-modal="#callback-modal">Перезвоните мне</button>
+						<button class="btn" data-modal="#success-modal">Спасибо за заявку</button>
+						<button class="btn" data-modal="#doctor-modal">Врач и клиника</button>
+						<button class="btn" data-modal="#clinic-modal">Клиника и врач</button>
+						<button class="btn" data-modal="#service-modal">Услуга</button>
+						<button class="btn" data-modal="#clinic-review-modal">Оставить отзыв на клинику</button>
+						<button class="btn" data-modal="#doctor-review-modal">Оставить отзыв на Врача</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer" role="contentinfo">
+			<div class="footer-row first">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block footer-nav-wrapper">
+							<div class="footer-nav-columns">
+								<div class="column">
+									<h3 class="footer-caption">Сервис</h3>
+									<ul class="footer-nav">
+										<li><a href="#">О проекте</a></li>
+										<li><a href="#">Правила использования сервиса</a></li>
+										<li><a href="#">Политика конфиденциальности</a></li>
+										<li><a href="#">Партнеры</a></li>
+									</ul>
+								</div>
+								<div class="column">
+									<h3 class="footer-caption">Пациентам</h3>
+									<ul class="footer-nav">
+										<li><a href="clinics.html">Клиники</a></li>
+										<li><a href="doctors.html">Врачи</a></li>
+										<li><a href="services.html">Услуги</a></li>
+										<li><a href="#">Статьи</a></li>
+									</ul>
+								</div>
+								<div class="column">
+									<h3 class="footer-caption">Клиникам</h3>
+									<ul class="footer-nav">
+										<li><a href="#">Добавить клинику</a></li>
+										<li><a href="#">Продажа медицинского оборудования и расходных материалов</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="footer-block footer-contacts-wrapper">
+							<a href="index.html" class="footer-logo">
+								<img src="img/logo.svg" alt="">
+							</a>
+
+							<div class="contacts-info-block">
+								<p>Пишите нам на <a href="mailto:info@vmedic.ru">info@vmedic.ru</a><br>Звоните на <a href="tel:84951203386">8 (495) 120-33-86</a></p>
+								<p class="work-time">Время работы Call-центра: с 09:00 до 22:00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-row second">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block">
+							<p class="copyright">© VMEDIC 2020 <small>Цены, приведённые на сайте, не окончательные, не являются публичной офертой и носят информационный характер.</small></p>
+						</div>
+						<div class="footer-block webolution-wrapper">
+							<a href="https://webolution.ru/" class="webolution" aria-label="Создано в Webolution">
+								<img src="img/webolution.png" alt="Webolution - evolution of your business">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="modal" id="callback-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+
+				<h3 class="modal-caption">Перезвоните мне</h3>
+
+				<div class="form modal-form">
+					<form action="#">
+						<div class="form-inner">
+							<div class="form-fields">
+								<div class="form-field">
+									<input type="text" class="input-field" placeholder="Ваше имя">
+								</div>
+								<div class="form-field">
+									<input type="tel" class="input-field" placeholder="+7(___)___-__-__">
+								</div>
+							</div>
+
+							<div class="form-footer">
+								<button class="btn" type="submit">Жду звонка!</button>
+							</div>
+
+							<div class="form-agreement">
+								<label class="checkbox">
+									<input type="checkbox" class="visually-hidden">
+									<span class="fake-label">Даю согласие на <a href="#" target="_blank">обработку персональных данных.</a></span>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="success-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+
+				<div class="success-block">
+					<div class="block-image">
+						<img src="img/big-icons/success.svg" alt="">
+					</div>
+					<p class="block-text"><strong>Cпасибо,</strong> что воспользовались услугами нашего сервиса, наш специалист свяжется с вами в ближайшее время</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal small-paddings" id="doctor-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+
+				<h3 class="modal-small-caption">Врач и клиника</h3>
+
+				<div class="modal-single-card">
+					<div class="card-top">
+						<div class="card-image">
+							<img src="img/content-images/avatar.jpg" alt="">
+						</div>
+						
+						<div class="card-content">
+							<h3 class="card-caption">Мазурова Лариса Борисовна</h3>
+							<p>Гинеколог-эндокринолог | Врач-УЗИ, сексолог | Гирудотерапевт</p>
+
+							<div class="card-footer">
+								<div class="rating-block rating-15 small">
+									<div class="block-stars">
+										<div class="star"></div>
+										<div class="star"></div>
+										<div class="star"></div>
+										<div class="star"></div>
+										<div class="star"></div>
+									</div>
+									<div class="block-value">5.0</div>
+								</div>
+								<a href="#" class="reviews-link small">146 отзывов</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="location-select">
+					<div class="selected-option"></div>
+					<div class="dropdown">
+						<div class="option">
+							<p class="name">Медицинский центр "СитиМед"</p>
+							<p>г. Москва, ул. Беломорская, 26</p>
+						</div>
+						<div class="option">
+							<p class="name">Медицинский центр "СитиМед"</p>
+							<p>г. Москва, ул. Беломорская, 28</p>
+						</div>
+						<div class="option">
+							<p class="name">Медицинский центр "СитиМед"</p>
+							<p>г. Москва, ул. Беломорская, 32</p>
+						</div>
+					</div>
+				</div>
+
+				<h3 class="modal-small-caption">Ваши данные</h3>
+				<div class="form modal-form">
+					<div class="form-fields columns-2">
+						<div class="form-field fullwidth">
+							<input type="text" class="input-field" placeholder="Ваше имя">
+						</div>
+
+						<div class="form-field fullwidth">
+							<input type="tel" class="input-field" placeholder="+7(___)___-__-__">
+						</div>
+
+						<div class="form-field">
+							<h3 class="modal-small-caption">Дата приема</h3>
+							<input type="date" class="input-field">
+						</div>
+
+						<div class="form-field">
+							<h3 class="modal-small-caption">Время приема</h3>
+							<input type="time" class="input-field">
+						</div>
+					</div>
+
+					<div class="form-footer">
+						<button class="btn">Записаться</button>
+					</div>
+
+					<div class="form-agreement">
+						<label class="checkbox">
+							<input type="checkbox" class="visually-hidden">
+							<span class="fake-label">Даю согласие на <a href="#" target="_blank">обработку персональных данных.</a></span>
+						</label>
+					</div>
+
+					<div class="form-note">
+						<p><strong>Запись через сайт является предварительной.</strong> Для отправки заявки достаточно указать номер телефона. Наш сотрудник свяжется с Вами для подтверждения записи</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal small-paddings" id="clinic-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+
+				<h3 class="modal-small-caption">Клиника и врач</h3>
+
+				<div class="modal-single-card">
+					<div class="card-top">
+						<div class="card-image">
+							<img src="img/content-images/clinic-logo.png" alt="">
+						</div>
+						
+						<div class="card-content">
+							<h3 class="card-caption small">Медицинский центр "СитиМед" у м. Беломорская</h3>
+							<p>г. Москва, ул. Беломорская, 26</p>
+
+							<div class="card-footer">
+								<div class="rating-block rating-15 small">
+									<div class="block-stars">
+										<div class="star"></div>
+										<div class="star"></div>
+										<div class="star"></div>
+										<div class="star"></div>
+										<div class="star"></div>
+									</div>
+									<div class="block-value">5.0</div>
+								</div>
+								<a href="#" class="reviews-link small">146 отзывов</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="location-select">
+					<div class="selected-option"></div>
+					<div class="dropdown">
+						<div class="option">
+							<p class="name">Специальность врача/требуемая услуга</p>
+							<p>Хирург</p>
+						</div>
+						<div class="option">
+							<p class="name">Специальность врача/требуемая услуга</p>
+							<p>Хирург</p>
+						</div>
+						<div class="option">
+							<p class="name">Специальность врача/требуемая услуга</p>
+							<p>Хирург</p>
+						</div>
+					</div>
+				</div>
+
+				<h3 class="modal-small-caption">Ваши данные</h3>
+				<div class="form modal-form">
+					<div class="form-fields columns-2">
+						<div class="form-field fullwidth">
+							<input type="text" class="input-field" placeholder="Ваше имя">
+						</div>
+
+						<div class="form-field fullwidth">
+							<input type="tel" class="input-field" placeholder="+7(___)___-__-__">
+						</div>
+
+						<div class="form-field">
+							<h3 class="modal-small-caption">Дата приема</h3>
+							<input type="date" class="input-field">
+						</div>
+
+						<div class="form-field">
+							<h3 class="modal-small-caption">Время приема</h3>
+							<input type="time" class="input-field">
+						</div>
+					</div>
+
+					<div class="form-footer">
+						<button class="btn">Записаться</button>
+					</div>
+
+					<div class="form-agreement">
+						<label class="checkbox">
+							<input type="checkbox" class="visually-hidden">
+							<span class="fake-label">Даю согласие на <a href="#" target="_blank">обработку персональных данных.</a></span>
+						</label>
+					</div>
+
+					<div class="form-note">
+						<p><strong>Запись через сайт является предварительной.</strong> Для отправки заявки достаточно указать номер телефона. Наш сотрудник свяжется с Вами для подтверждения записи</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal small-paddings" id="service-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+
+				<h3 class="modal-small-caption">Услуга</h3>
+
+				<h3 class="modal-service-name">Справка 003в/у для ГИБДД (для категорий A, A1, B, BE, B1, M)</h3>
+
+				<div class="modal-single-card">
+					<div class="card-top">
+						<div class="card-image">
+							<img src="img/content-images/clinic-logo.png" alt="">
+						</div>
+						
+						<div class="card-content">
+							<h3 class="card-caption small">Медицинский центр "СитиМед" у м. Беломорская</h3>
+							<p>г. Москва, ул. Беломорская, 26</p>
+
+							<div class="card-footer">
+								<div class="rating-block rating-15 small">
+									<div class="block-stars">
+										<div class="star"></div>
+										<div class="star"></div>
+										<div class="star"></div>
+										<div class="star"></div>
+										<div class="star"></div>
+									</div>
+									<div class="block-value">5.0</div>
+								</div>
+								<a href="#" class="reviews-link small">146 отзывов</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="location-select">
+					<div class="selected-option"></div>
+					<div class="dropdown">
+						<div class="option">
+							<p class="name">Специальность врача/требуемая услуга</p>
+							<p>Хирург</p>
+						</div>
+						<div class="option">
+							<p class="name">Специальность врача/требуемая услуга</p>
+							<p>Хирург</p>
+						</div>
+						<div class="option">
+							<p class="name">Специальность врача/требуемая услуга</p>
+							<p>Хирург</p>
+						</div>
+					</div>
+				</div>
+
+				<h3 class="modal-small-caption">Ваши данные</h3>
+				<div class="form modal-form">
+					<div class="form-fields columns-2">
+						<div class="form-field fullwidth">
+							<input type="text" class="input-field" placeholder="Ваше имя">
+						</div>
+
+						<div class="form-field fullwidth">
+							<input type="tel" class="input-field" placeholder="+7(___)___-__-__">
+						</div>
+
+						<div class="form-field">
+							<h3 class="modal-small-caption">Дата приема</h3>
+							<input type="date" class="input-field">
+						</div>
+
+						<div class="form-field">
+							<h3 class="modal-small-caption">Время приема</h3>
+							<input type="time" class="input-field">
+						</div>
+					</div>
+
+					<div class="form-footer">
+						<button class="btn">Записаться</button>
+					</div>
+
+					<div class="form-agreement">
+						<label class="checkbox">
+							<input type="checkbox" class="visually-hidden">
+							<span class="fake-label">Даю согласие на <a href="#" target="_blank">обработку персональных данных.</a></span>
+						</label>
+					</div>
+
+					<div class="form-note">
+						<p><strong>Запись через сайт является предварительной.</strong> Для отправки заявки достаточно указать номер телефона. Наш сотрудник свяжется с Вами для подтверждения записи</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal small-paddings" id="clinic-review-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+
+				<h3 class="modal-small-caption"><strong>Оставить отзыв на клинику</strong></h3>
+
+				<div class="modal-single-card">
+					<div class="card-top">
+						<div class="card-image">
+							<img src="img/content-images/clinic-logo.png" alt="">
+						</div>
+						
+						<div class="card-content">
+							<h3 class="card-caption small">Медицинский центр "СитиМед" у м. Беломорская</h3>
+							<p>г. Москва, ул. Беломорская, 26</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="location-select">
+					<div class="selected-option"></div>
+					<div class="dropdown">
+						<div class="option">
+							<p class="name">Врач</p>
+							<p>Не указано</p>
+						</div>
+						<div class="option">
+							<p class="name">Врач</p>
+							<p>Не указано</p>
+						</div>
+						<div class="option">
+							<p class="name">Врач</p>
+							<p>Не указано</p>
+						</div>
+					</div>
+				</div>
+				<div class="form modal-form">
+					<div class="form-fields columns-2">
+						<div class="form-field fullwidth">
+							<input type="text" class="input-field" placeholder="Ваше имя">
+						</div>
+
+						<div class="form-field">
+							<h3 class="modal-small-caption">Дата приема</h3>
+							<input type="date" class="input-field">
+						</div>
+
+						<div class="form-field">
+							<h3 class="modal-small-caption">Оценка</h3>
+							<div class="set-rating-block">
+								<input type="radio" name="clinic-rating" aria-label="Ужасно">
+								<input type="radio" name="clinic-rating" aria-label="Плохо">
+								<input type="radio" name="clinic-rating" checked aria-label="Нормально">
+								<input type="radio" name="clinic-rating" aria-label="Хорошо">
+								<input type="radio" name="clinic-rating" aria-label="Отлично">
+							</div>
+						</div>
+
+						<div class="form-field fullwidth">
+							<textarea placeholder="Ваш отзыв"></textarea>
+						</div>
+					</div>
+
+					<div class="form-footer">
+						<button class="btn">Отправить</button>
+					</div>
+
+					<div class="form-agreement">
+						<label class="checkbox">
+							<input type="checkbox" class="visually-hidden">
+							<span class="fake-label">Даю согласие на <a href="#" target="_blank">обработку персональных данных.</a></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal small-paddings" id="doctor-review-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+
+				<h3 class="modal-small-caption"><strong>Оставить отзыв на Врача</strong></h3>
+
+				<div class="modal-single-card">
+					<div class="card-top">
+						<div class="card-image">
+							<img src="img/content-images/avatar.jpg" alt="">
+						</div>
+						
+						<div class="card-content">
+							<h3 class="card-caption">Мазурова Лариса Борисовна</h3>
+							<p>Гинеколог-эндокринолог | Врач-УЗИ, сексолог | Гирудотерапевт</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="location-select">
+					<div class="selected-option"></div>
+					<div class="dropdown">
+						<div class="option">
+							<p class="name">Медицинский центр "СитиМед"</p>
+							<p>г. Москва, ул. Беломорская, 26</p>
+						</div>
+						<div class="option">
+							<p class="name">Медицинский центр "СитиМед"</p>
+							<p>г. Москва, ул. Беломорская, 40</p>
+						</div>
+						<div class="option">
+							<p class="name">Медицинский центр "СитиМед"</p>
+							<p>г. Москва, ул. Беломорская, 65</p>
+						</div>
+					</div>
+				</div>
+				<div class="form modal-form">
+					<div class="form-fields columns-2">
+						<div class="form-field fullwidth">
+							<input type="text" class="input-field" placeholder="Ваше имя">
+						</div>
+
+						<div class="form-field">
+							<h3 class="modal-small-caption">Дата приема</h3>
+							<input type="date" class="input-field">
+						</div>
+
+						<div class="form-field">
+							<h3 class="modal-small-caption">Оценка</h3>
+							<div class="set-rating-block">
+								<input type="radio" name="clinic-rating" aria-label="Ужасно">
+								<input type="radio" name="clinic-rating" aria-label="Плохо">
+								<input type="radio" name="clinic-rating" checked aria-label="Нормально">
+								<input type="radio" name="clinic-rating" aria-label="Хорошо">
+								<input type="radio" name="clinic-rating" aria-label="Отлично">
+							</div>
+						</div>
+
+						<div class="form-field fullwidth">
+							<textarea placeholder="Ваш отзыв"></textarea>
+						</div>
+					</div>
+
+					<div class="form-footer">
+						<button class="btn">Отправить</button>
+					</div>
+
+					<div class="form-agreement">
+						<label class="checkbox">
+							<input type="checkbox" class="visually-hidden">
+							<span class="fake-label">Даю согласие на <a href="#" target="_blank">обработку персональных данных.</a></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal video-modal" id="video-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+				<div class="modal-video">
+					<div id="modal-video-iframe"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jcf.js"></script>
+	<script src="js/jcf.select.js"></script>
+	<!-- <script src="//www.youtube.com/iframe_api"></script> -->
+	<!-- <script src="js/wow.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

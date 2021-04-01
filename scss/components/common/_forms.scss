@@ -280,7 +280,8 @@
 	}
 }
 
-.radio{
+.radio,
+.checkbox{
 	.fake-label{
 		display: block;
 		padding-left: 27px;
@@ -327,6 +328,16 @@
 		}
 	}
 
+	a{
+		color: $text-color;
+		text-decoration: underline;
+
+		&:hover,
+		&:focus{
+			text-decoration: none;
+		}
+	}
+
 	input:checked + .fake-label{
 		color: $darkgreen;
 
@@ -336,6 +347,37 @@
 
 		&:after{
 			opacity: 1;
+		}
+	}
+}
+
+.checkbox{
+	.fake-label{
+		color: $text-light;
+		line-height: 16px;
+
+		&:before{
+			border-radius: 2px;
+			width: 16px;
+			height: 16px;
+			border: 1px solid #465C79;
+			background: transparent;
+		}
+
+		&:after{
+			width: 16px;
+			height: 16px;
+			background: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M6.8 11.7a.5.5 0 01-.7 0L3.2 9a.8.8 0 010-1.1l.4-.4c.3-.3.8-.3 1 0l1.9 1.8 4.8-4.9c.3-.3.8-.3 1.1 0l.4.4c.3.3.3.8 0 1l-6 6z' fill='%23fff'/%3E%3C/svg%3E");
+			border-radius: 0;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	input:checked + .fake-label{
+		&:before{
+			border-color: #465C79;
+			background: #465C79;
 		}
 	}
 }

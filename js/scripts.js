@@ -63,6 +63,13 @@ document.addEventListener('DOMContentLoaded', function(){
 		}
 	});
 
+	// Show map
+	$('.js-show-on-map').click(function(e){
+		e.preventDefault();
+
+		$('.show-on-map-section').stop().slideToggle(300);
+	});
+
 	// Mobile top nav
 	$('.mobile-top-nav').each(function(i, el){
 		let currentLayer = 1;
@@ -158,12 +165,16 @@ document.addEventListener('DOMContentLoaded', function(){
 	$('[data-fancybox]').fancybox();
 
 	// Fields
-	$('.input-wrapper input').on('change keyup', function(e){
+	$('.form-field input').on('change keyup', function(e){
 		if ($(this).val() !== '') {
 			$(this).addClass('not-empty');
 		} else{
 			$(this).removeClass('not-empty');
 		}
+	});
+
+	$('.checkbox a, .radio a').click(function(e){
+		e.stopPropagation();
 	});
 
 	// Select Field
