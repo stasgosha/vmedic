@@ -184,7 +184,15 @@ document.addEventListener('DOMContentLoaded', function(){
 		fakeDropInBody: false
 	});
 
-	jcf.replace( $('.select-field select') );
+	jcf.replace( $('.select-field:not(.with-search) select') );
+
+
+	$('.select-field.with-search select').each(function(i, el){
+		$(el).select2({
+			allowClear: true,
+			language: 'ru'
+		});
+	});
 
 	// Sliders
 	function equalSlideHeight(slider){

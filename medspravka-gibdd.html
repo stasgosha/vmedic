@@ -8,6 +8,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/slick.min.css">
 	<link rel="stylesheet" href="css/slick-theme.min.css">
@@ -293,9 +295,9 @@
 								</div>
 
 								<div class="form-field">
-									<div class="select-field">
-										<select>
-											<option class="hideme" value="1">Вид справок</option>
+									<div class="select-field with-search">
+										<select data-placeholder="Вид справок">
+											<option></option>
 											<option value="2">Акушер</option>
 											<option value="3">Аллерголог</option>
 											<option value="4">Андролог</option>
@@ -983,6 +985,9 @@
 	<!-- <script src="//www.youtube.com/iframe_api"></script> -->
 	<!-- <script src="js/wow.min.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/i18n/ru.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>
